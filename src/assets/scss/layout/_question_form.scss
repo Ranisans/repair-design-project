@@ -1,0 +1,9 @@
+@import "../abstracts/mixins";
+
+.question_form {
+  height: 520px;
+
+  background: linear-gradient(to top, #131313, #131313 45%, #fff 45%, #fff);
+
+  @include block-width();
+}

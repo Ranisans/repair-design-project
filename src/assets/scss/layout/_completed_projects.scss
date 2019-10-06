@@ -1,0 +1,7 @@
+@import "../abstracts/mixins";
+
+.completed_projects {
+  height: 660px;
+
+  @include block-width();
+}

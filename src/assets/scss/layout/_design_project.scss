@@ -1,0 +1,15 @@
+@import "../abstracts/mixins";
+
+.design_projects {
+  height: 910px;
+
+  background: linear-gradient(
+    to top,
+    #131313,
+    #131313 41%,
+    #fff 41%,
+    #fff 100%
+  );
+
+  @include block-width();
+}

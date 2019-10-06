@@ -1,0 +1,9 @@
+@import "../abstracts/mixins";
+
+.team {
+  height: 912px;
+
+  background: linear-gradient(to top, #fff, #fff 51.4%, #131313 51.4%, #131313);
+
+  @include block-width();
+}

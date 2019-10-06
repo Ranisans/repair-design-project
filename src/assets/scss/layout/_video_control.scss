@@ -1,0 +1,9 @@
+@import "../abstracts/mixins";
+
+.video_control {
+  height: 1080px;
+
+  background: linear-gradient(0deg, #fff 66%, #131313 34%);
+
+  @include block-width();
+}

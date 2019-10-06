@@ -1,0 +1,7 @@
+@import "../abstracts/mixins";
+
+.details {
+  height: 721px;
+
+  @include block-width();
+}

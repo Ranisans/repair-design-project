@@ -1,0 +1,7 @@
+@import "../abstracts/mixins";
+
+.footer {
+  height: 133px;
+
+  @include block-width();
+}

@@ -1,0 +1,7 @@
+@import "../abstracts/mixins";
+
+.working_steps {
+  height: 800px;
+
+  @include block-width();
+}
