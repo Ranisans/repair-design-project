@@ -1,7 +1,11 @@
 @import "../abstracts/mixins";
 
 .details {
-  height: 721px;
+  height: 490px;
 
   @include block-width();
+
+  @media #{$information_desktop} {
+    height: 721px;
+  }
 }

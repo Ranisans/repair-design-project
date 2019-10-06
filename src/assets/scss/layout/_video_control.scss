@@ -1,9 +1,15 @@
 @import "../abstracts/mixins";
 
 .video_control {
-  height: 1080px;
+  height: 910px;
 
-  background: linear-gradient(0deg, #fff 66%, #131313 34%);
+  background: linear-gradient(0deg, #fff 6.3%, #131313 6.3%);
 
   @include block-width();
+
+  @media #{$information_desktop} {
+    height: 1080px;
+
+    background: linear-gradient(0deg, #fff 66%, #131313 34%);
+  }
 }

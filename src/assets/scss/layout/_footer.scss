@@ -1,7 +1,15 @@
 @import "../abstracts/mixins";
 
 .footer {
-  height: 133px;
+  display: none;
+
+  @include hidden_in_mobile();
 
   @include block-width();
+
+  @media #{$information_desktop} {
+    display: inline-block;
+
+    height: 133px;
+  }
 }

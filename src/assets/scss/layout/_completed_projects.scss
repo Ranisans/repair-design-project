@@ -1,7 +1,11 @@
 @import "../abstracts/mixins";
 
 .completed_projects {
-  height: 660px;
+  height: 700px;
 
   @include block-width();
+
+  @media #{$information_desktop} {
+    height: 660px;
+  }
 }

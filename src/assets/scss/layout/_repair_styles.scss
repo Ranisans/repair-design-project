@@ -1,17 +1,23 @@
 @import "../abstracts/mixins";
 
 .repair_styles {
-  height: 1120px;
+  height: 2180px;
 
-  background: linear-gradient(
-    to top,
-    #fff,
-    #fff 7.7%,
-    #131313 7.7%,
-    #131313 85%,
-    #fff 85%,
-    #fff 100%
-  );
+  background: linear-gradient(0deg, #131313 89.1%, #fff 89.1%);
 
   @include block-width();
+
+  @media #{$information_desktop} {
+    height: 1120px;
+
+    background: linear-gradient(
+      to top,
+      #fff,
+      #fff 7.7%,
+      #131313 7.7%,
+      #131313 85%,
+      #fff 85%,
+      #fff 100%
+    );
+  }
 }

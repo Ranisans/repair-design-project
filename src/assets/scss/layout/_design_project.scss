@@ -12,4 +12,6 @@
   );
 
   @include block-width();
+
+  @include hidden_in_mobile();
 }

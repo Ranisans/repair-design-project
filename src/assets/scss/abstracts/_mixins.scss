@@ -1,4 +1,24 @@
+@import "../abstracts/variables";
+
 @mixin block-width {
-  width: 1440px;
+  width: 375px;
   margin: 0 auto;
+
+  @media #{$information_tablets} {
+    width: 960px;
+  }
+
+  @media #{$information_desktop} {
+    width: 1440px;
+  }
+}
+
+@mixin hidden_in_mobile {
+  display: none;
+  visibility: hidden;
+
+  @media #{$information_tablets} {
+    display: block;
+    visibility: visible;
+  }
 }

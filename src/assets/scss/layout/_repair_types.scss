@@ -1,9 +1,13 @@
 @import "../abstracts/mixins";
 
 .repair_types {
-  height: 900px;
+  height: 1735px;
 
   background-color: rgb(255, 255, 255);
 
   @include block-width();
+
+  @media #{$information_desktop} {
+    height: 900px;
+  }
 }

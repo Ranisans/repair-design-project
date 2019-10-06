@@ -1,9 +1,19 @@
 @import "../abstracts/mixins";
 
 .team {
-  height: 912px;
-
-  background: linear-gradient(to top, #fff, #fff 51.4%, #131313 51.4%, #131313);
+  height: 1685px;
 
   @include block-width();
+
+  @media #{$information_desktop} {
+    height: 912px;
+
+    background: linear-gradient(
+      to top,
+      #fff,
+      #fff 51.4%,
+      #131313 51.4%,
+      #131313
+    );
+  }
 }
