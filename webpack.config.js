@@ -1,9 +1,10 @@
 const path = require("path");
+const isDevelopment = process.env.NODE_ENV === "development";
 
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: "./src/app.js",
+  entry: "./src/javascripts/app.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js"
@@ -11,13 +12,49 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: ["css-loader", "sass-loader"]
-        })
+        test: /\.(sa|sc|c)ss$/,
+
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          {
+            loader: "css-loader"
+          },
+          {
+            loader: "sass-loader"
+          }
+        ]
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        use: [
+          {
+            loader: "file-loader",
+
+            // and directory to save
+            options: {
+              outputPath: "images"
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(woff|woff2|ttf|otf|eot)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              outputPath: "fonts"
+            }
+          }
+        ]
       }
     ]
   },
-  plugins: [new ExtractTextPlugin("style.css")]
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "main.css"
+    })
+  ]
 };
