@@ -1,10 +1,20 @@
 @import "../abstracts/mixins";
+@import "../abstracts/fonts";
 
 .homepage {
+  position: relative;
+
   width: 100%;
   height: 476px;
 
+  background-image: url("../images/homepage-back-2.png"),
+    url("../images/homepage-back.png");
+  background-repeat: no-repeat;
+  background-size: 1358px 708px;
+
   @media #{$information_desktop} {
     height: 755px;
+
+    background-position: 82px 0;
   }
 }
