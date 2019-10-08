@@ -18,3 +18,29 @@
     background-position: 82px 0;
   }
 }
+
+.homepage-instagram_link {
+  display: inline-block;
+
+  font-family: $FuturaDemiC;
+  font-size: 14px;
+
+  color: #e3b873;
+  border: none;
+  background: transparent;
+
+  transform: rotate(90deg);
+  text-align: center;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.homepage-line {
+  display: inline-block;
+
+  width: 51px;
+  margin-left: 10px;
+  padding-bottom: 2px;
+
+  border-top: 2px solid #e3b873;
+}
