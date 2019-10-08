@@ -1,5 +1,11 @@
-.site_container {
+@import "../abstracts/mixins";
+
+body {
   background-color: rgb(38, 38, 38);
+}
+
+.site_container {
+  @include block-width();
 }
 
 .site_container * {

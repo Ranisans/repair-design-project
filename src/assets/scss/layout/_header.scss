@@ -2,11 +2,10 @@
 @import "../abstracts/fonts";
 
 .header {
+  width: 100%;
   height: 57px;
 
   text-transform: uppercase;
-
-  @include block-width();
 
   @media #{$information_desktop} {
     height: 83px;
@@ -54,9 +53,9 @@
   margin-left: 7px;
   padding-top: 35px;
 
-  text-decoration: none;
-
   border-bottom: 1px solid #e3b873;
+
+  text-decoration: none;
 }
 
 .header-call_request {

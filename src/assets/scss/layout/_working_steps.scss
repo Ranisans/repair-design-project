@@ -1,9 +1,8 @@
 @import "../abstracts/mixins";
 
 .working_steps {
+  width: 100%;
   @include hidden_in_mobile();
-
-  @include block-width();
 
   @media #{$information_desktop} {
     height: 800px;

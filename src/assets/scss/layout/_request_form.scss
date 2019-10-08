@@ -1,11 +1,10 @@
 @import "../abstracts/mixins";
 
 .request_form {
+  width: 100%;
   background-color: rgb(255, 255, 255);
 
   @include hidden_in_mobile();
-
-  @include block-width();
 
   @media #{$information_desktop} {
     height: 800px;

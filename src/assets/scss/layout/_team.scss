@@ -1,9 +1,8 @@
 @import "../abstracts/mixins";
 
 .team {
+  width: 100%;
   height: 1685px;
-
-  @include block-width();
 
   @media #{$information_desktop} {
     height: 912px;

@@ -1,6 +1,7 @@
 @import "../abstracts/mixins";
 
 .design_projects {
+  width: 100%;
   height: 910px;
 
   background: linear-gradient(
@@ -10,8 +11,6 @@
     #fff 41%,
     #fff 100%
   );
-
-  @include block-width();
 
   @include hidden_in_mobile();
 }

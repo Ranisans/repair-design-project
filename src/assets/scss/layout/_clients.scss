@@ -1,11 +1,11 @@
 @import "../abstracts/mixins";
 
 .clients {
+  width: 100%;
   background-color: rgb(255, 255, 255);
 
   @include hidden_in_mobile();
 
-  @include block-width();
   @media #{$information_desktop} {
     height: 770px;
   }

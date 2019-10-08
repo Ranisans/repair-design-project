@@ -1,11 +1,10 @@
 @import "../abstracts/mixins";
 
 .footer {
+  width: 100%;
   display: none;
 
   @include hidden_in_mobile();
-
-  @include block-width();
 
   @media #{$information_desktop} {
     display: inline-block;
