@@ -14,11 +14,8 @@
 }
 
 @mixin hidden_in_mobile {
-  display: none;
-  visibility: hidden;
-
-  @media #{$information_tablets} {
-    display: block;
-    visibility: visible;
+  @media #{$information_mobile} {
+    display: none;
+    visibility: hidden;
   }
 }
