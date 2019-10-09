@@ -19,10 +19,34 @@
   }
 }
 
+.homepage_container {
+  position: relative;
+
+  display: grid;
+
+  padding-top: 188px;
+
+  background: transparent;
+
+  grid-template-columns: 82px 740px;
+  grid-template-rows: 103px 109px 100px;
+}
+
+.homepage_container * {
+  background: transparent;
+}
+
 .homepage-instagram_link {
+  position: absolute;
+  top: 103px;
+  left: -46px;
+
   display: inline-block;
 
-  font-family: $FuturaDemiC;
+  width: 174px;
+  height: 25px;
+
+  font-family: $FuturaDemiC, sans-serif;
   font-size: 14px;
 
   color: #e3b873;
@@ -33,14 +57,122 @@
   text-align: center;
   text-decoration: none;
   text-decoration: none;
+
+  grid-column: 1;
+  grid-row: 1 / span 2;
 }
 
 .homepage-line {
   display: inline-block;
 
   width: 51px;
+  height: 2px;
+  margin-bottom: 5px;
   margin-left: 10px;
-  padding-bottom: 2px;
 
-  border-top: 2px solid #e3b873;
+  background-color: #e3b873;
+  // border-top: 2px solid #e3b873;
+}
+
+.homepage-tagline {
+  align-self: center;
+
+  width: 520px;
+  margin-left: 60px;
+  padding-top: 9px;
+
+  font-family: $YesevaOne;
+  font-size: 2.5rem;
+  font-weight: normal;
+  line-height: 52px;
+
+  color: #ffffff;
+
+  text-transform: uppercase;
+
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.homepage-tagline_city {
+  color: #e3b873;
+}
+
+.homepage-offer {
+  align-self: baseline;
+
+  width: 460px;
+  margin-left: 60px;
+
+  font-family: $FuturaBookC;
+  font-size: 1.38rem;
+  line-height: 30px;
+
+  color: #ffffff;
+
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.homepage_buttons {
+  align-self: end;
+
+  margin-left: 60px;
+
+  text-transform: uppercase;
+
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.homepage_buttons .button {
+  width: 208px;
+  height: 52px;
+
+  font-family: FuturaDemiC, sans-serif;
+  font-size: 0.81rem;
+
+  color: #ffffff;
+  border-radius: 3px;
+  outline: none;
+
+  text-transform: uppercase;
+}
+
+.homepage_buttons-calculate {
+  margin-right: 15px;
+
+  border: none;
+  background-color: #e3b873;
+
+  text-transform: uppercase;
+}
+
+.header_scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 247px;
+  height: 97px;
+  margin-top: 159px;
+
+  background-color: #131313;
+}
+
+.header_scroll-label {
+  font-family: $YesevaOne;
+  font-size: 0.88rem;
+
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+
+.header_scroll-icon {
+  margin-left: 18px;
+
+  font-size: 2rem;
+
+  color: #e3b873;
 }
