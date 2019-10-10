@@ -1,0 +1,39 @@
+@import "../../abstracts/mixins";
+@import "../../abstracts/fonts";
+
+.projects-nav {
+  width: 625px;
+  margin-left: 20px;
+
+  grid-column: 3 / span 5;
+  grid-row: 1;
+}
+
+.projects_nav_container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+.projects_nav_container-item {
+  font-family: $YesevaOne;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+
+  text-decoration: none;
+}
+
+.projects_container-link {
+  color: #ffffff4d;
+  text-decoration: none;
+}
+
+.projects_container-active_link {
+  color: #e3b873;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #e3b873;
+}
