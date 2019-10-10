@@ -1,0 +1,81 @@
+@import "../../abstracts/mixins";
+@import "../../abstracts/fonts";
+
+.projects-header {
+  font-family: $YesevaOne;
+  font-size: 2rem;
+
+  color: #e3b873;
+
+  text-transform: uppercase;
+
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.projects-description {
+  font-size: 1rem;
+
+  color: #ffffff;
+
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+.projects-label {
+  font-family: $YesevaOne;
+  font-size: 1.3rem;
+
+  color: #e3b873;
+
+  text-transform: uppercase;
+}
+
+.projects-text {
+  font-family: $FuturaBookC;
+  font-size: 1rem;
+
+  color: #ffffff;
+}
+
+.projects-address_label {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.projects-address {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.projects-area_label {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.projects-area {
+  color: #ffffff;
+
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.projects-time_label {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.projects-time {
+  grid-column: 1;
+  grid-row: 7;
+}
+
+.projects-cost_label {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.projects-cost {
+  grid-column: 2;
+  grid-row: 7;
+}

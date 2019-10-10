@@ -1,0 +1,27 @@
+@import "../abstracts/mixins";
+@import "../abstracts/fonts";
+
+@import "projects/text_block";
+
+.projects {
+  width: 100%;
+  height: 700px;
+
+  @media #{$information_desktop} {
+    height: 660px;
+  }
+}
+
+.projects_container {
+  display: grid;
+
+  margin-left: 90px;
+  padding-top: 55px;
+
+  grid-template-columns: 160px 280px 280px 180px 290px auto;
+  grid-template-rows: 35px 120px 120px 50px 50px 60px 60px 90px;
+}
+
+.projects_container * {
+  background: transparent;
+}
