@@ -11,29 +11,63 @@
 
 .projects_nav_container {
   display: flex;
-  width: 100%;
   flex-direction: row;
   justify-content: space-between;
 
-  list-style-type: none;
+  width: 100%;
   margin-top: 5px;
+
+  list-style-type: none;
 }
 
 .projects_nav_container-item {
   font-family: $YesevaOne;
   font-size: 0.85rem;
-  text-transform: uppercase;
 
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .projects_container-link {
   color: #ffffff4d;
+
   text-decoration: none;
 }
 
 .projects_container-active_link {
-  color: #e3b873;
   padding-bottom: 7px;
+
+  color: #e3b873;
   border-bottom: 2px solid #e3b873;
+}
+
+.projects_images {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  width: 845px;
+  height: 482px;
+  margin-left: 64px;
+
+  grid-column: 3 / span 6;
+  grid-row: 2 / span 8;
+}
+
+.projects_images-image {
+  height: 482px;
+}
+
+.projects_images-first {
+  width: 679px;
+
+  background-image: url("../images/admiral.png") !important;
+}
+
+.projects_images-second {
+  width: 145px;
+  margin-left: 21px;
+
+  background-image: url("../images/sochi.png") !important;
+  background-position: -134px !important;
 }
