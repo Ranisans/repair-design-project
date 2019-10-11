@@ -34,19 +34,28 @@
 }
 
 .projects-label {
+  padding-left: 11px;
+
   font-family: $YesevaOne;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 
   color: #e3b873;
 
+  letter-spacing: 0.3px;
   text-transform: uppercase;
 }
 
 .projects-text {
+  margin-top: 8px;
+  padding-left: 10px;
+
   font-family: $FuturaBookC;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 19px;
 
   color: #ffffff;
+
+  letter-spacing: 0.5px;
 }
 
 .projects-address_label {
@@ -55,6 +64,8 @@
 }
 
 .projects-address {
+  width: 100px;
+
   grid-column: 1;
   grid-row: 5;
 }
@@ -65,8 +76,6 @@
 }
 
 .projects-area {
-  color: #ffffff;
-
   grid-column: 2;
   grid-row: 5;
 }
