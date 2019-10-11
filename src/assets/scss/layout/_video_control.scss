@@ -73,10 +73,11 @@
 .video_controller-play {
   width: 85px;
   height: 85px;
+  padding: 0;
+
   border: none;
   border-radius: 100%;
   background-image: url("../images/play_button.png");
-  cursor: pointer;
 
-  padding: 0;
+  cursor: pointer;
 }
