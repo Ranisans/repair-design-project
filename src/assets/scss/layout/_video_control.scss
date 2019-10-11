@@ -81,3 +81,25 @@
 
   cursor: pointer;
 }
+
+.video_control-line {
+  width: 55px;
+  margin-top: 63px;
+
+  border-bottom: 2px solid $Gold;
+
+  @include on_page_center();
+}
+
+.video_control-text {
+  width: 700px;
+  margin-top: 27px;
+
+  font-family: $FuturaBookC;
+  font-size: 1.25rem;
+  line-height: 34px;
+
+  text-align: center;
+
+  @include on_page_center();
+}
