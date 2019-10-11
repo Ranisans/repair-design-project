@@ -2,11 +2,16 @@
 @import "../../abstracts/fonts";
 
 .projects-header {
+  padding-top: 10px;
+  padding-left: 12px;
+
   font-family: $YesevaOne;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  line-height: 37px;
 
   color: #e3b873;
 
+  letter-spacing: -2.4px;
   text-transform: uppercase;
 
   grid-column: 1;
@@ -14,9 +19,15 @@
 }
 
 .projects-description {
-  font-size: 1rem;
+  padding-left: 11px;
+
+  font-family: $FuturaBookC;
+  font-size: 1.1rem;
+  line-height: 27px;
 
   color: #ffffff;
+
+  word-spacing: 1px;
 
   grid-column: 1 / span 2;
   grid-row: 3;
