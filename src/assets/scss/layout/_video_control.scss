@@ -103,3 +103,48 @@
 
   @include on_page_center();
 }
+
+.video_control_form {
+  display: flex;
+  justify-content: space-between;
+
+  width: 770px;
+  margin-top: 95px;
+
+  @include on_page_center();
+}
+
+.video_control_form input {
+  width: 231px;
+  height: 44px;
+
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  background: none;
+  :focus {
+    outline: none;
+  }
+}
+
+.video_control_form-submit {
+  width: 200px;
+  height: 51px;
+
+  border: none;
+  border-radius: 2px;
+  background-color: $Gold;
+}
+
+.input-container {
+  position: relative;
+}
+
+.video_control_form-label {
+  position: absolute;
+
+  font-family: $FuturaBookC;
+  font-size: 0.95rem;
+
+  color: #36363680;
+}
