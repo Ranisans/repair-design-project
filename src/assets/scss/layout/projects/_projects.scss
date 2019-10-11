@@ -1,8 +1,8 @@
-@import "../abstracts/mixins";
-@import "../abstracts/fonts";
+@import "../../abstracts/mixins";
+@import "../../abstracts/fonts";
 
-@import "projects/text_block";
-@import "projects/nav";
+@import "text_block";
+@import "nav";
 
 .projects {
   width: 100%;
