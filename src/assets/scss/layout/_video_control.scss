@@ -13,6 +13,10 @@
   }
 }
 
+.video_control * {
+  background: transparent;
+}
+
 .video_control_label {
   width: 200px;
   padding-top: 45px;
@@ -43,15 +47,13 @@
   @include on_page_center();
 }
 
-.video_control_container * {
-  background: transparent;
-}
-
 .video_container {
   position: relative;
+
   width: 817px;
   height: 434px;
   margin-top: 31px;
+
   @include on_page_center();
 }
 
