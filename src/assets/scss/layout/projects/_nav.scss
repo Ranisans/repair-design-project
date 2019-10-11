@@ -42,8 +42,9 @@
 }
 
 .projects_images {
-  display: flex;
   position: relative;
+
+  display: flex;
   overflow: hidden;
 
   width: 845px;
@@ -70,4 +71,27 @@
 
   background-image: url("../images/sochi.png") !important;
   background-position: -134px !important;
+}
+
+.projects_images-slider_right {
+  position: absolute;
+  top: 205px;
+  right: 44px;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  border-radius: 100%;
+  outline: none;
+  background-color: #e3b873 !important;
+
+  img {
+    padding-top: 5px;
+    padding-left: 3px;
+
+    font-size: 4rem;
+
+    content: url("../images/arrow.svg");
+  }
 }
