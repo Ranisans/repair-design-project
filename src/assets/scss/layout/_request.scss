@@ -1,0 +1,101 @@
+@import "../abstracts/mixins";
+
+.request {
+  width: 100%;
+
+  background-color: rgb(255, 255, 255);
+  background-image: url("../images/request_form_back.png");
+  background-repeat: no-repeat;
+
+  @include hidden_in_mobile();
+
+  @media #{$information_desktop} {
+    height: 800px;
+  }
+}
+
+.request * {
+  background: transparent;
+}
+
+.request_container {
+  display: grid;
+
+  margin-left: 340px;
+  padding-top: 89px;
+
+  grid-template-columns: 480px 550px;
+  grid-template-rows: 111px 159px 162px 125px 125px;
+}
+
+.request_container-point {
+  display: flex;
+
+  margin-top: 11px;
+}
+
+.request_container-number {
+  width: 42px;
+  height: 42px;
+
+  font-family: $YesevaOne;
+  font-size: 1.1rem;
+  line-height: 42px;
+
+  color: #ffffff;
+  border-radius: 100%;
+  background-color: $Gold;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+.request_container-text {
+  margin-top: 14px;
+  margin-left: 16px;
+
+  font-family: $FuturaMediumC;
+  font-size: 1.1rem;
+
+  letter-spacing: 0.2px;
+}
+
+.request_container-first_point {
+  margin-left: 17px;
+
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.request_container-second_point {
+  margin-left: 91px;
+
+  grid-column: 1;
+  grid-row: 2;
+
+  .request_container-text {
+    margin-top: 23px;
+  }
+}
+
+.request_container-third_point {
+  margin-left: 116px;
+
+  grid-column: 1;
+  grid-row: 3;
+
+  .request_container-text {
+    margin-top: 27px;
+  }
+}
+
+.request_container-fourth_point {
+  margin-left: 51px;
+
+  grid-column: 1;
+  grid-row: 4;
+
+  .request_container-text {
+    margin-top: 16px;
+  }
+}
