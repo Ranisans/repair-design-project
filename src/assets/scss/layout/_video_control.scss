@@ -125,13 +125,13 @@
   .form-label {
     font-family: $FuturaBookC;
   }
-}
 
-.checkbox_container {
-  width: 290px;
-  margin-top: 32px;
+  .checkbox_container {
+    width: 290px;
+    margin-top: 32px;
 
-  font-family: $FuturaBookC;
+    font-family: $FuturaBookC;
 
-  @include on_page_center();
+    @include on_page_center();
+  }
 }
