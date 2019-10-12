@@ -28,11 +28,33 @@
 .repair_styles_container {
   display: grid;
 
+  padding-top: 45px;
+
   background-image: url("../images/repair_styles_back.png");
   background-repeat: no-repeat;
   background-position-y: 170px;
   background-size: 100%;
 
   grid-template-columns: 500px 400px 400px;
-  grid-template-rows: 300px 400px 400px;
+  grid-template-rows: 310px 360px 370px;
+}
+
+.styles_menu {
+  margin-top: 239px;
+  margin-left: 100px;
+
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+
+.styles_menu-label {
+  width: 300px;
+
+  font-family: $YesevaOne;
+  font-size: 1.7rem;
+  line-height: 35px;
+
+  color: $Gold;
+
+  text-transform: uppercase;
 }
