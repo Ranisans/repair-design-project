@@ -105,16 +105,13 @@
 }
 
 .video_control_form {
-  display: flex;
-  justify-content: space-between;
-
   width: 770px;
   margin-top: 95px;
 
   @include on_page_center();
 }
 
-.video_control_form input {
+.video_control_form .input_container input {
   width: 231px;
   height: 44px;
 
@@ -136,7 +133,7 @@
   background-color: $Gold;
 }
 
-.input-container {
+.input_container {
   position: relative;
 }
 

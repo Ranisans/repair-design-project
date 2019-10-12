@@ -106,21 +106,23 @@
 
         <p class="video_control-text">At each facility, a camera is installed that broadcasts the progress of work on the clock.<br> At any time, you can go to our website and monitor the progress of work in your<br> apartment. You can watch the live broadcast from one of our facilities!<br> Leave a request below and you will receive a link to the broadcast.</p>
         <form action="" class="video_control_form">
-          <div class="input_container">
-            <label for="name" class="video_control_form-label">Name</label>
-            <input type="text" id="name" name="name" placeholder="What is your name:" class="video_control_form-name">
+          <div class="flex_container">
+            <div class="input_container">
+              <label for="name" class="video_control_form-label">Name</label>
+              <input type="text" id="name" name="name" placeholder="What is your name:" class="video_control_form-name">
+            </div>
+            <div class="input_container">
+              <label for="telephone" class="video_control_form-label">Phone</label>
+              <input type="text" id="telephone" name="telephone" placeholder="Your phone number:" class="video_control_form-telephone">
+            </div>
+            <button class="video_control_form-submit">submit</button>
           </div>
-          <div class="input-container">
-            <label for="telephone" class="video_control_form-label">Phone</label>
-            <input type="text" id="telephone" name="telephone" placeholder="Your phone number:" class="video_control_form-telephone">
+          <div class="checkbox_container">
+            <input type="checkbox" class="checkbox_container-checkbox styled-checkbox" id="consent" value="consent" checked>
+            <label for="consent">I agree to the processing of personal data
+            </label>
           </div>
-          <button class="video_control_form-submit">submit</button>
         </form>
-        <div class="checkbox_container">
-          <input type="checkbox" class="checkbox_container-checkbox styled-checkbox" id="consent" value="consent" checked>
-          <label for="consent">I agree to the processing of personal data
-          </label>
-        </div>
       </div>
     </section>
   
