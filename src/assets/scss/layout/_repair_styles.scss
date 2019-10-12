@@ -32,11 +32,11 @@
 
   background-image: url("../images/repair_styles_back.png");
   background-repeat: no-repeat;
-  background-position-y: 170px;
+  background-position-y: 168px;
   background-size: 100%;
 
-  grid-template-columns: 500px 400px 400px;
-  grid-template-rows: 310px 360px 370px;
+  grid-template-columns: 550px 397px 400px;
+  grid-template-rows: 310px 350px 370px;
 }
 
 .styles_menu {
@@ -56,6 +56,7 @@
 
   color: $Gold;
 
+  letter-spacing: 0.2px;
   text-transform: uppercase;
 }
 
@@ -68,6 +69,7 @@
 
 .styles_menu-item {
   margin-bottom: 24px;
+
   line-height: 24px;
 
   :last-child {
@@ -85,8 +87,58 @@
 }
 
 .styles_menu-item--active .styles_menu-link {
-  color: $Gold;
   display: inline-block;
-  border-bottom: 1px solid $Gold;
+
   padding-bottom: 2px;
+
+  color: $Gold;
+  border-bottom: 1px solid $Gold;
+}
+
+.repair_styles-image {
+  width: 354px;
+}
+
+.repair_styles-first_image {
+  height: 557px;
+  margin-top: 83px;
+  margin-left: 38px;
+
+  content: url("../images/repair_styles_1.png");
+
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.repair_styles-second_image {
+  height: 350px;
+  margin-top: 20px;
+  margin-left: 38px;
+
+  content: url("../images/repair_styles_2.png");
+
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.repair_styles-third_image {
+  height: 275px;
+  margin-top: 11px;
+  margin-left: 38px;
+
+  content: url("../images/repair_styles_3.png");
+
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.repair_styles-fourth_image {
+  height: 625px;
+  margin-top: 11px;
+  margin-left: 38px;
+
+  content: url("../images/repair_styles_4.png");
+
+  grid-column: 3;
+  grid-row: 2 / span 3;
 }
