@@ -51,10 +51,42 @@
   width: 300px;
 
   font-family: $YesevaOne;
-  font-size: 1.7rem;
+  font-size: 1.67rem;
   line-height: 35px;
 
   color: $Gold;
 
   text-transform: uppercase;
+}
+
+.styles_menu-list {
+  margin-top: 44px;
+  padding-left: 0;
+
+  list-style-type: none;
+}
+
+.styles_menu-item {
+  margin-bottom: 24px;
+  line-height: 24px;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.styles_menu-link {
+  font-family: $ProximaNova;
+  font-size: 1.25rem;
+
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.styles_menu-item--active .styles_menu-link {
+  color: $Gold;
+  display: inline-block;
+  border-bottom: 1px solid $Gold;
+  padding-bottom: 2px;
 }

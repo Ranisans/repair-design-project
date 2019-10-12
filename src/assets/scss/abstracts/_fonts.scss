@@ -1,14 +1,14 @@
 @font-face {
   font-family: FuturaBookC;
 
-  src: url(../fonts/FuturaBookC.woff2);
+  src: url("../fonts/FuturaBookC.woff2");
 }
 
 $FuturaBookC: FuturaBookC, sans-serif;
 
 @font-face {
   font-family: FuturaDemiC;
-  src: url(../fonts/FuturaDemiC.woff2);
+  src: url("../fonts/FuturaDemiC.woff2");
 }
 
 $FuturaDemiC: FuturaDemiC, sans-serif;
@@ -16,7 +16,7 @@ $FuturaDemiC: FuturaDemiC, sans-serif;
 @font-face {
   font-family: YesevaOne;
 
-  src: url(../fonts/YesevaOne.woff2);
+  src: url("../fonts/YesevaOne.woff2");
 }
 
 $YesevaOne: YesevaOne, sans-serif;
@@ -24,7 +24,15 @@ $YesevaOne: YesevaOne, sans-serif;
 @font-face {
   font-family: FuturaMediumC;
 
-  src: url(../fonts/FuturaMediumC.woff2);
+  src: url("../fonts/FuturaMediumC.woff2");
 }
 
 $FuturaMediumC: FuturaMediumC, sans-serif;
+
+@font-face {
+  font-family: ProximaNova;
+
+  src: url("../fonts/ProximaNova-Regular.woff2");
+}
+
+$ProximaNova: ProximaNova, sans-serif;
