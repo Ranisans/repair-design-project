@@ -1,4 +1,6 @@
-@import "../abstracts/mixins";
+//FIX after pressing on checkbox - page scrolls to section start
+// move checkbox code to mixin with classes
+//TODO Validation on not empty fields with correct type.
 
 .request {
   position: relative;
