@@ -60,3 +60,70 @@
 
   @include on_page_center();
 }
+
+.designs_container {
+  width: 1236px;
+  margin-top: 47px;
+
+  @include on_page_center();
+}
+
+.designs_container-design {
+  position: relative;
+
+  width: 392px;
+  height: 421px;
+
+  .info_block {
+    position: absolute;
+    top: 295px;
+    left: 32px;
+
+    width: 330px;
+
+    background: #ffffff;
+  }
+
+  .info_block-label {
+    padding-top: 6px;
+  }
+
+  .info_block_item {
+    font-size: 0.9rem;
+  }
+
+  .info_block-button {
+    height: 54px;
+    margin-top: 17px;
+    padding-left: 31px;
+
+    text-align: left;
+  }
+}
+
+.designs_container-mini {
+  background-image: url("../images/design_shadow.png"),
+    url("../images/redecoration_back.png");
+
+  .info_block {
+    height: 210px;
+  }
+}
+
+.designs_container-standard {
+  background-image: url("../images/design_shadow.png"),
+    url("../images/designer_back.png");
+
+  .info_block {
+    height: 287px;
+  }
+}
+
+.designs_container-full {
+  background-image: url("../images/design_shadow.png"),
+    url("../images/designer_full.png");
+
+  .info_block {
+    height: 414px;
+  }
+}
