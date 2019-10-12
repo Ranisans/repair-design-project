@@ -1,7 +1,3 @@
-//TODO Correct number of columns.
-//TODO Correct placement of heading in left top corner.
-//TODO Interactive arrows and pagination circles.
-
 .working_steps {
   width: 100%;
 
@@ -23,8 +19,8 @@
   margin-left: 90px;
   padding-top: 25px;
 
-  grid-template-columns: 450px 765px;
-  grid-template-rows: 686px;
+  grid-template-columns: 450px auto;
+  grid-template-rows: 725px;
 }
 
 .step_info {
@@ -108,4 +104,81 @@
   color: #ffffff;
 
   letter-spacing: 0.25px;
+}
+
+.steps_container {
+  display: grid;
+
+  margin-top: 100px;
+
+  grid-column: 2;
+  grid-row: 1;
+  grid-template-columns: 329px 336px auto;
+  grid-template-rows: 107px 110px auto;
+}
+
+.single_step {
+  margin-top: 2px;
+  margin-left: 35px;
+
+  font-size: $size15px;
+
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.single_step-label {
+  display: inline-block;
+
+  margin-bottom: 0;
+  padding-bottom: 2px;
+
+  font-family: $YesevaOne;
+
+  border-bottom: 1px solid #e3b8734d;
+}
+
+.single_step-text {
+  width: 127px;
+  margin-top: 11px;
+
+  font-family: $FuturaBookC;
+  line-height: 18px;
+}
+
+.first_step {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.second_step {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.third_step {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.forth_step {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.fifth_step {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.sixth_step {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.single_step--active {
+  color: #ffffff;
+
+  .single_step-label {
+    border-bottom: 1px solid $Gold;
+  }
 }
