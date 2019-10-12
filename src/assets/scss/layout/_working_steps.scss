@@ -30,14 +30,24 @@
 .step_info {
   grid-column: 1;
   grid-row: 1;
+
+  .projects_sliders {
+    margin-top: 88px;
+    width: 287px;
+    margin-left: 9px;
+  }
+
+  .projects_sliders-dots {
+    margin-top: 18px;
+  }
 }
 
 .step_info-label_info {
   margin-top: 27px;
   margin-left: 9px;
-
+  letter-spacing: 0.4px;
   font-family: $FuturaDemiC;
-  font-size: 0.95rem;
+  font-size: $size15px;
 
   color: #ffffff;
 
@@ -57,4 +67,38 @@
 
   letter-spacing: 0.3px;
   text-transform: uppercase;
+}
+
+.step_info-step_number {
+  margin-top: 86px;
+  margin-left: 9px;
+
+  font-family: $YesevaOne;
+  font-size: 1.12rem;
+
+  color: #ffffff;
+}
+
+.step_info_block-label {
+  font-family: $YesevaOne;
+  font-size: $size15px;
+  text-transform: uppercase;
+  color: $Gold;
+  margin-top: 23px;
+  margin-top: 22px;
+  margin-left: 9px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  margin-bottom: 0;
+}
+
+.step_info_block-text {
+  font-family: $FuturaBookC;
+  font-size: $size15px;
+  color: #ffffff;
+  margin-top: 12px;
+  margin-left: 9px;
+  width: 337px;
+  letter-spacing: 0.25px;
+  line-height: 23px;
 }
