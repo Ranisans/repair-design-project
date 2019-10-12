@@ -128,9 +128,15 @@
   width: 200px;
   height: 51px;
 
+  font-family: $FuturaDemiC;
+  font-size: 0.95rem;
+
+  color: #ffffff;
   border: none;
   border-radius: 2px;
   background-color: $Gold;
+
+  text-transform: uppercase;
 }
 
 .input_container {
