@@ -1,0 +1,29 @@
+.input_container {
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  font-size: 0.95rem;
+
+  color: #36363680;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  background: none;
+  :focus {
+    outline: none;
+  }
+}
+
+.form-submit {
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  background-color: $Gold !important;
+
+  text-transform: uppercase;
+}

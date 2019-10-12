@@ -107,47 +107,23 @@
   margin-top: 95px;
 
   @include on_page_center();
-}
 
-.video_control_form .input_container input {
-  width: 231px;
-  height: 44px;
-
-  border: none;
-  border-bottom: 1px solid gray;
-  outline: none;
-  background: none;
-  :focus {
-    outline: none;
+  .form-input {
+    width: 231px;
+    height: 44px;
   }
-}
 
-.video_control_form-submit {
-  width: 200px;
-  height: 51px;
+  .form-submit {
+    width: 200px;
+    height: 51px;
 
-  font-family: $FuturaDemiC;
-  font-size: 0.95rem;
+    font-family: $FuturaDemiC;
+    font-size: 0.95rem;
+  }
 
-  color: #ffffff;
-  border: none;
-  border-radius: 2px;
-  background-color: $Gold;
-
-  text-transform: uppercase;
-}
-
-.input_container {
-  position: relative;
-}
-
-.video_control_form-label {
-  position: absolute;
-
-  font-family: $FuturaBookC;
-  font-size: 0.95rem;
-
-  color: #36363680;
+  .form-label {
+    font-family: $FuturaBookC;
+  }
 }
 
 .checkbox_container {
