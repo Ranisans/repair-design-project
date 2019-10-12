@@ -14,3 +14,34 @@
 
   @include hidden_in_mobile();
 }
+
+.design_projects * {
+  background: transparent;
+}
+
+.design_projects_label {
+  width: 257px;
+  padding-top: 69px;
+
+  @include on_page_center();
+}
+
+.design_projects_label-text {
+  margin-top: 0;
+
+  font-family: $YesevaOne;
+  font-size: 1.2rem;
+  font-weight: 300;
+
+  color: #181818;
+
+  text-align: center;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.design_projects_label-image {
+  content: url("../images/design_icon.png");
+
+  @include on_page_center();
+}
