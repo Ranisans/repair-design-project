@@ -2,7 +2,7 @@
 
 .request {
   position: relative;
-  z-index: -1;
+  z-index: 0;
 
   overflow: hidden;
 
@@ -125,6 +125,8 @@
 }
 
 .request_form {
+  z-index: 1;
+
   width: 506px;
   height: 509px;
   margin-top: 27px;
@@ -145,8 +147,8 @@
     height: 50px;
 
     font-family: $FuturaMediumC;
-    font-weight: 800;
     font-size: 1.15rem;
+    font-weight: 800;
   }
 
   .form-submit {
@@ -211,8 +213,8 @@
 
 .offer_container-text {
   width: 240px;
-  margin-left: 25px;
   margin-top: 28px;
+  margin-left: 25px;
 
   font-family: $FuturaDemiC;
   font-size: 1.25rem;
