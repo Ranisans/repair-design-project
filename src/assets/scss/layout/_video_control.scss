@@ -148,3 +148,12 @@
 
   color: #36363680;
 }
+
+.checkbox_container {
+  width: 290px;
+  margin-top: 32px;
+
+  font-family: $FuturaBookC;
+
+  @include on_page_center();
+}
