@@ -20,3 +20,19 @@
     );
   }
 }
+
+.repair_styles * {
+  background: transparent;
+}
+
+.repair_styles_container {
+  display: grid;
+
+  background-image: url("../images/repair_styles_back.png");
+  background-repeat: no-repeat;
+  background-position-y: 170px;
+  background-size: 100%;
+
+  grid-template-columns: 500px 400px 400px;
+  grid-template-rows: 300px 400px 400px;
+}
