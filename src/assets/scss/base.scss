@@ -2,7 +2,6 @@
 @import "abstracts/fonts";
 @import "abstracts/mixins";
 @import "abstracts/variables";
-@import "abstracts/buttons";
 
 // vendor
 @import "vendor/normalize.scss";
@@ -11,6 +10,7 @@
 @import "components/checkbox";
 @import "components/flex_container";
 @import "components/info_block";
+@import "components/buttons";
 
 // layout
 @import "layout/site_container";
