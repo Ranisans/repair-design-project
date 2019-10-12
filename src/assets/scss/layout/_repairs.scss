@@ -15,10 +15,26 @@
 }
 
 .repairs_label {
+  width: 255px;
+
+  @include on_page_center();
 }
 
 .repairs_label-text {
+  margin: 0;
+  padding-top: 70px;
+
+  font-family: $YesevaOne;
+  font-size: 1.25rem;
+
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .repairs_label-image {
+  margin-top: 14px;
+
+  content: url("../images/repair-logo.png");
+
+  @include on_page_center();
 }
