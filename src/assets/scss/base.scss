@@ -1,10 +1,23 @@
+// abstract
+@import "abstracts/fonts";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// vendor
+@import "vendor/normalize.scss";
+
+// component
+@import "components/checkbox";
+@import "components/flex_container";
+@import "components/info_block";
+
 // layout
 @import "layout/site_container";
 @import "layout/header";
 @import "layout/homepage";
 @import "layout/projects/projects";
 @import "layout/video_control";
-@import "layout/repair_types";
+@import "layout/repairs";
 @import "layout/request_form";
 @import "layout/repair_styles";
 @import "layout/design_project";
@@ -14,10 +27,3 @@
 @import "layout/question_form";
 @import "layout/details";
 @import "layout/footer";
-
-// vendor
-@import "vendor/normalize.scss";
-
-// component
-@import "components/checkbox";
-@import "components/flex_container";

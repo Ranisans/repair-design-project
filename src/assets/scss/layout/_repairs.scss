@@ -1,0 +1,24 @@
+.repairs {
+  width: 100%;
+  height: 1735px;
+
+  background-color: rgb(255, 255, 255);
+
+  @media #{$information_desktop} {
+    height: 900px;
+  }
+}
+
+.repairs-container,
+.repairs-container * {
+  background: transparent;
+}
+
+.repairs_label {
+}
+
+.repairs_label-text {
+}
+
+.repairs_label-image {
+}
