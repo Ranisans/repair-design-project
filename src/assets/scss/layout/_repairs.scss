@@ -38,3 +38,31 @@
 
   @include on_page_center();
 }
+
+.repairs_types {
+  width: 1236px;
+  margin: 31px 100px 0 100px;
+}
+
+.repairs_types-type {
+  width: 392px;
+  .info_block {
+    width: 330px;
+    margin-top: 295px;
+    margin-left: 32px;
+
+    background-color: #ffffff;
+  }
+}
+
+.repairs_types-redecoration {
+  background: url("../images/redecoration_back.png") no-repeat;
+}
+
+.repairs_types-overhaul {
+  background: url("../images/overhaul_back.png") no-repeat;
+}
+
+.repairs_types-designer {
+  background: url("../images/designer_back.png") no-repeat;
+}

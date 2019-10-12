@@ -2,13 +2,41 @@
 }
 
 .info_block-label {
+  padding-top: 25px;
+  margin-bottom: 0;
+  padding-left: 34px;
+
+  font-family: $YesevaOne;
+  font-size: 1.1rem;
+
+  color: #363636;
 }
 
 .info_block-list {
+  margin-top: 8px;
+  padding-left: 52px;
+
+  font-family: $FuturaBookC;
+  font-size: 0.9rem;
+  line-height: 25px;
+
+  color: #959595;
 }
 
 .info_block_item {
 }
 
 .info_block-button {
+  width: 228px;
+  height: 51px;
+  margin-top: 20px;
+
+  font-family: $YesevaOne;
+  font-size: 1.15rem;
+
+  color: #ffffff;
+  border: none;
+  background-color: $Gold !important;
+
+  text-transform: uppercase;
 }
