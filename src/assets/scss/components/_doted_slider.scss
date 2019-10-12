@@ -1,0 +1,37 @@
+.projects_sliders {
+  display: flex;
+  justify-content: space-between;
+
+  width: 207px;
+  margin-top: 31px;
+  margin-left: 11px;
+
+  grid-column: 1 / span 2;
+  grid-row: 8;
+
+  * {
+    cursor: pointer;
+  }
+}
+
+.projects_sliders-arrow_left {
+  content: url("../images/arrow-long.svg");
+  transform: rotate(180deg);
+}
+
+.projects_sliders-arrow_right {
+  content: url("../images/arrow-long.svg");
+}
+
+.projects_sliders-dots {
+  width: 10px;
+  height: 10px;
+  margin-top: 24px;
+
+  border-radius: 100%;
+  background-color: #ffffff4d !important;
+}
+
+.projects_sliders-dots--active {
+  background-color: #ffffff !important;
+}
