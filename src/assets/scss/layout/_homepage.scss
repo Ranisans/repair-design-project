@@ -49,7 +49,7 @@
   font-family: $FuturaDemiC, sans-serif;
   font-size: 14px;
 
-  color: #e3b873;
+  color: $Gold;
   border: none;
   background: transparent;
 
@@ -70,8 +70,7 @@
   margin-bottom: 5px;
   margin-left: 10px;
 
-  background-color: #e3b873;
-  // border-top: 2px solid #e3b873;
+  background-color: $Gold;
 }
 
 .homepage-tagline {
@@ -95,7 +94,7 @@
 }
 
 .homepage-tagline_city {
-  color: #e3b873;
+  color: $Gold;
 }
 
 .homepage-offer {
@@ -143,7 +142,7 @@
   margin-right: 15px;
 
   border: none;
-  background-color: #e3b873;
+  background-color: $Gold;
 
   text-transform: uppercase;
 }
@@ -175,5 +174,5 @@
 
   font-size: 2rem;
 
-  color: #e3b873;
+  color: $Gold;
 }

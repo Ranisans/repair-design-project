@@ -34,7 +34,7 @@
 }
 
 .header--active {
-  color: #e3b873;
+  color: $Gold;
 }
 
 .header-brand {
@@ -67,7 +67,7 @@
   // margin-left: 7px;
   padding-top: 35px;
 
-  border-bottom: 1px solid #e3b873;
+  border-bottom: 1px solid $Gold;
 
   text-decoration: none;
 }
@@ -84,7 +84,7 @@
   border: none;
   border-radius: 2px;
   outline: none;
-  background-color: #e3b873;
+  background-color: $Gold;
 
   text-transform: uppercase;
 

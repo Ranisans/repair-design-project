@@ -37,8 +37,8 @@
 .projects_container-active_link {
   padding-bottom: 7px;
 
-  color: #e3b873;
-  border-bottom: 2px solid #e3b873;
+  color: $Gold;
+  border-bottom: 2px solid $Gold;
 }
 
 .projects_images {
@@ -84,7 +84,7 @@
   border: none;
   border-radius: 100%;
   outline: none;
-  background-color: #e3b873 !important;
+  background-color: $Gold !important;
 
   span {
     padding-top: 5px;
