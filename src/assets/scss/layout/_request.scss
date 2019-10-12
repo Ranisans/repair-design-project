@@ -145,6 +145,7 @@
     height: 50px;
 
     font-family: $FuturaMediumC;
+    font-weight: 800;
     font-size: 1.15rem;
   }
 
@@ -193,4 +194,28 @@
   text-align: center;
 
   @include on_page_center();
+}
+
+.offer_container {
+  display: flex;
+
+  margin-left: 46px;
+
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.offer_container-logo {
+  content: url("../images/pig.png");
+}
+
+.offer_container-text {
+  width: 240px;
+  margin-left: 25px;
+  margin-top: 28px;
+
+  font-family: $FuturaDemiC;
+  font-size: 1.25rem;
+
+  color: $Gold;
 }
