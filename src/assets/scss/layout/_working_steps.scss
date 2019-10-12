@@ -4,9 +4,57 @@
 
 .working_steps {
   width: 100%;
+
   @include hidden_in_mobile();
+
+  * {
+    background: transparent;
+  }
 
   @media #{$information_desktop} {
     height: 800px;
   }
+}
+
+.working_steps_container {
+  display: grid;
+
+  margin-top: 0;
+  margin-left: 90px;
+  padding-top: 25px;
+
+  grid-template-columns: 450px 765px;
+  grid-template-rows: 686px;
+}
+
+.step_info {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.step_info-label_info {
+  margin-top: 27px;
+  margin-left: 9px;
+
+  font-family: $FuturaDemiC;
+  font-size: 0.95rem;
+
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+
+.step_info-label {
+  width: 200px;
+  margin-top: 17px;
+  margin-left: 10px;
+
+  font-family: $YesevaOne;
+  font-size: 1.65rem;
+  line-height: 37px;
+
+  color: $Gold;
+
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
