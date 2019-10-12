@@ -11,6 +11,7 @@
   background-color: rgb(255, 255, 255);
   background-image: url("../images/request_form_back.png");
   background-repeat: no-repeat;
+
   @include hidden_in_mobile();
 
   @media #{$information_desktop} {
@@ -121,4 +122,75 @@
   .request_container-text {
     margin-top: 26px;
   }
+}
+
+.request_form {
+  width: 506px;
+  height: 509px;
+  margin-top: 27px;
+  margin-left: 15px;
+
+  background-color: #131313;
+
+  grid-column: 2;
+  grid-row: 1 / span 4;
+
+  .input_container {
+    margin-top: 42px;
+    margin-left: 47px;
+  }
+
+  .form-input {
+    width: 408px;
+    height: 50px;
+
+    font-family: $FuturaMediumC;
+    font-size: 1.15rem;
+  }
+
+  .form-submit {
+    width: 200px;
+    height: 51px;
+
+    font-family: $FuturaDemiC;
+    font-size: 0.95rem;
+  }
+
+  .form-label {
+    font-family: $FuturaBookC;
+
+    color: #ffffff80;
+  }
+
+  .checkbox_container {
+    width: 290px;
+    margin-top: 17px;
+    margin-left: 48px;
+
+    font-family: $FuturaBookC;
+
+    color: #ffffff;
+  }
+
+  .form-submit {
+    width: 213px;
+    margin-top: 40px;
+    margin-left: 244px;
+
+    font-size: 0.8rem;
+  }
+}
+
+.request_form-label {
+  width: 295px;
+  margin-top: 26px;
+
+  font-family: $FuturaDemiC;
+  font-size: 1.3rem;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  @include on_page_center();
 }
