@@ -19,51 +19,20 @@
   * {
     background: transparent;
   }
-}
 
-.team_logo {
-  width: 120px;
-  padding-top: 36px;
+  .label-heading {
+    width: 460px;
+  }
 
-  @include on_page_center();
-}
-
-.team_logo-text {
-  margin-top: 0;
-
-  font-family: $YesevaOne;
-  font-size: 1.25rem;
-
-  color: #ffffff;
-
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.team_logo-image {
-  content: url("../images/team_logo.png");
-
-  @include on_page_center();
-}
-
-.team-heading {
-  width: 460px;
-  margin-top: 18px;
-
-  font-family: $FuturaBookC;
-  font-size: 1.25rem;
-  line-height: 27px;
-
-  color: #ffffff;
-
-  text-align: center;
-
-  @include on_page_center();
+  .logo_block-image {
+    content: url("../images/team_logo.png");
+  }
 }
 
 .team_container {
   width: 1027px;
   margin-top: 81px;
+
   @include on_page_center();
 }
 

@@ -7,36 +7,28 @@
   @media #{$information_desktop} {
     height: 900px;
   }
+
+  .logo_block {
+    width: 255px;
+  }
+
+  .logo_block-text {
+    margin-bottom: 0;
+    padding-top: 32px;
+
+    color: #181818;
+  }
+
+  .logo_block-image {
+    margin-top: 17px;
+
+    content: url("../images/repair-logo.png");
+  }
 }
 
 .repairs-container,
 .repairs-container * {
   background: transparent;
-}
-
-.repairs_label {
-  width: 255px;
-
-  @include on_page_center();
-}
-
-.repairs_label-text {
-  margin: 0;
-  padding-top: 70px;
-
-  font-family: $YesevaOne;
-  font-size: 1.25rem;
-
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.repairs_label-image {
-  margin-top: 14px;
-
-  content: url("../images/repair-logo.png");
-
-  @include on_page_center();
 }
 
 .repairs_types {

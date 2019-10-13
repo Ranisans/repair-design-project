@@ -12,40 +12,25 @@
 
     background: linear-gradient(0deg, #fff 66%, #131313 34%);
   }
+
+  .logo_block {
+    width: 200px;
+    padding-top: 45px;
+  }
+
+  .logo_block-text {
+    margin-bottom: 0;
+  }
+
+  .logo_block-image {
+    margin-top: 14px;
+
+    content: url("../images/camera.png");
+  }
 }
 
 .video_control * {
   background: transparent;
-}
-
-.video_control_label {
-  width: 200px;
-  padding-top: 45px;
-
-  @include on_page_center();
-}
-
-.video_control_label-text {
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-
-  font-family: $YesevaOne;
-  font-size: 1.25rem;
-
-  color: #ffffff;
-
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.video_control_label-image {
-  margin-top: 14px;
-
-  content: url("../images/camera.png");
-
-  @include on_page_center();
 }
 
 .video_container {
@@ -112,6 +97,7 @@
   .form-input {
     width: 231px;
     height: 44px;
+
     font-family: $FuturaBookC;
   }
 
