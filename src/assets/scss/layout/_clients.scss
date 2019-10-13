@@ -9,4 +9,29 @@
   @media #{$information_desktop} {
     height: 770px;
   }
+
+  * {
+    background: transparent;
+  }
+
+  .logo_block {
+    padding-top: 58px;
+    font-style: normal;
+    font-weight: normal;
+    width: 257px;
+  }
+
+  .logo_block-text {
+    color: #181818;
+    margin-bottom: 0;
+  }
+
+  .logo_block-image {
+    margin-top: 16px;
+    content: url("../images/clients_label.png");
+  }
+
+  .label-heading {
+    color: #181818;
+  }
 }
