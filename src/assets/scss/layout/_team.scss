@@ -18,33 +18,39 @@
 }
 
 .team_logo {
-  padding-top: 36px;
   width: 120px;
-
+  padding-top: 36px;
   @include on_page_center();
 }
 
 .team_logo-text {
   margin-top: 0;
-  text-transform: uppercase;
-  color: #ffffff;
+
   font-family: $YesevaOne;
   font-size: 1.25rem;
+
+  color: #ffffff;
+
   text-align: center;
+  text-transform: uppercase;
 }
 
 .team_logo-image {
   content: url("../images/team_logo.png");
+
   @include on_page_center();
 }
 
 .team-heading {
   width: 460px;
   margin-top: 18px;
-  @include on_page_center();
-  text-align: center;
+
   font-family: $FuturaBookC;
-  color: #ffffff;
   font-size: 1.25rem;
   line-height: 27px;
+
+  color: #ffffff;
+
+  text-align: center;
+  @include on_page_center();
 }
