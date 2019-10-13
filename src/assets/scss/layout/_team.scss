@@ -16,3 +16,24 @@
     );
   }
 }
+
+.team_logo {
+  padding-top: 36px;
+  width: 120px;
+
+  @include on_page_center();
+}
+
+.team_logo-text {
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: $YesevaOne;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.team_logo-image {
+  content: url("../images/team_logo.png");
+  @include on_page_center();
+}
