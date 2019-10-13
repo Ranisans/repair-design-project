@@ -16,6 +16,12 @@
 
     background-position: 82px 0;
   }
+
+  @media #{$information_mobile} {
+    background-image: url("../images/homepage_mobile_back_2.png"),
+      url("../images/homepage_mobile_back.png");
+    background-size: contain;
+  }
 }
 
 .homepage_container {
@@ -29,6 +35,12 @@
 
   grid-template-columns: 82px 740px;
   grid-template-rows: 103px 109px 100px;
+
+  @media #{$information_mobile} {
+    display: block;
+
+    padding-top: 52px;
+  }
 }
 
 .homepage_container * {
@@ -59,6 +71,8 @@
 
   grid-column: 1;
   grid-row: 1 / span 2;
+
+  @include hidden_in_mobile();
 }
 
 .homepage-line {
@@ -90,6 +104,15 @@
 
   grid-column: 2;
   grid-row: 1;
+
+  @media #{$information_mobile} {
+    width: 340px;
+    margin-bottom: 0;
+    margin-left: 18px;
+
+    font-size: 1.4375rem;
+    line-height: 132.83%;
+  }
 }
 
 .homepage-tagline_city {
@@ -110,6 +133,15 @@
 
   grid-column: 2;
   grid-row: 2;
+
+  @media #{$information_mobile} {
+    width: 320px;
+    margin-top: 13px;
+    margin-left: 18px;
+
+    font-size: 1.125rem;
+    line-height: 135.84%;
+  }
 }
 
 .homepage_buttons {
@@ -121,6 +153,13 @@
 
   grid-column: 2;
   grid-row: 3;
+
+  @media #{$information_mobile} {
+    width: 338px;
+    margin-top: 34px;
+
+    @include on_page_center();
+  }
 }
 
 .homepage_buttons .button {
@@ -135,6 +174,11 @@
   outline: none;
 
   text-transform: uppercase;
+
+  @media #{$information_mobile} {
+    width: 100%;
+    margin-bottom: 26px;
+  }
 }
 
 .homepage_buttons-calculate {
@@ -144,6 +188,15 @@
   background-color: $Gold;
 
   text-transform: uppercase;
+}
+
+.homepage_buttons-submit::before {
+  @media #{$information_tablets} {
+    content: "SUBMIT YOUR APPLICATION";
+  }
+  @media #{$information_mobile} {
+    content: "APPLICATION";
+  }
 }
 
 .header_scroll {
@@ -168,10 +221,11 @@
 }
 
 .header_scroll-icon {
-  content: url("../images/arrow-circle.svg");
   margin-left: 18px;
 
   font-size: 2rem;
 
   color: $Gold;
+
+  content: url("../images/arrow-circle.svg");
 }
