@@ -15,6 +15,10 @@
       #131313
     );
   }
+
+  * {
+    background: transparent;
+  }
 }
 
 .team_logo {
@@ -53,4 +57,82 @@
 
   text-align: center;
   @include on_page_center();
+}
+
+.team_container {
+  margin-top: 81px;
+  width: 1027px;
+  @include on_page_center();
+}
+
+.worker_container {
+  position: relative;
+  width: 272px;
+  height: 357px;
+
+  .info_block {
+    @include on_page_center();
+    margin-top: 278px;
+    width: 233px;
+    height: 137px;
+    background: #ffffff;
+  }
+
+  .info_block-label {
+    padding-left: 0;
+    text-align: center;
+    padding-top: 21px;
+  }
+
+  .info_block-text {
+    text-align: center;
+    font-family: $FuturaBookC;
+    font-size: 1.125rem;
+    color: #959595;
+    line-height: 26px;
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+
+  .info_block-button {
+    margin-top: 19px;
+    width: 233px;
+    height: 44px;
+    font-size: 0.8125rem;
+  }
+}
+
+.worker_container-logo {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: -35px;
+  left: -35px;
+  margin: 0;
+
+  box-shadow: 0 4px 10px $Gold;
+}
+
+.project_manager_block {
+  background: url("../images/project_manager_face.png") no-repeat;
+
+  .worker_container-logo {
+    background: url("../images/project_manager_logo.png");
+  }
+}
+
+.designer_block {
+  background: url("../images/designer_face.png") no-repeat;
+
+  .worker_container-logo {
+    background: url("../images/designer_logo.png");
+  }
+}
+
+.foreman_block {
+  background: url("../images/foreman_face.png") no-repeat;
+
+  .worker_container-logo {
+    background: url("../images/foreman_logo.png");
+  }
 }
