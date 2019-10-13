@@ -1,12 +1,63 @@
 //TODO Phone number must contain href of type tel.
 //TODO Interactive buttons of socail networks.
-//TODO Map API block can be placed as just image.
 
 .details {
   width: 100%;
-  height: 490px;
 
-  @media #{$information_desktop} {
+  background-image: url("../images/details_shadow.png"),
+    url("../images/details_image.png");
+
+  @media #{$information_tablets} {
     height: 721px;
   }
+
+  @media #{$information_desktop} {
+    height: 955px;
+  }
+
+  * {
+    background: transparent;
+  }
+
+  .logo_block {
+    width: 589px;
+    padding-top: 274px;
+  }
+
+  .logo_block-text {
+    margin-bottom: 0;
+
+    font-family: $YesevaOne;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 28px;
+
+    color: $Gold;
+  }
+
+  .logo_block-image {
+    display: flex;
+    justify-content: space-between;
+
+    width: 71px;
+    height: 28px;
+    margin-top: 22px;
+
+    * {
+      width: 28px;
+      height: 28px;
+
+      border: none;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.logo_block-mail {
+  background-image: url("../images/mail_icon.svg");
+}
+
+.logo_block-instagram {
+  background-image: url("../images/instagram_icon.svg");
 }
