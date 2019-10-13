@@ -2,6 +2,7 @@
 
 .clients {
   width: 100%;
+
   background-color: rgb(255, 255, 255);
 
   @include hidden_in_mobile();
@@ -15,23 +16,108 @@
   }
 
   .logo_block {
-    padding-top: 58px;
-    font-style: normal;
-    font-weight: normal;
     width: 257px;
+    padding-top: 58px;
+
+    font-weight: normal;
+    font-style: normal;
   }
 
   .logo_block-text {
-    color: #181818;
     margin-bottom: 0;
+
+    color: #181818;
   }
 
   .logo_block-image {
     margin-top: 16px;
+
     content: url("../images/clients_label.png");
   }
 
   .label-heading {
     color: #181818;
+  }
+}
+
+.clients_container {
+  width: 1236px;
+
+  @include on_page_center();
+}
+
+.client_container {
+  .info_block {
+    width: 352px;
+    height: 428px;
+  }
+
+  .info_block-client_image {
+    width: 76px;
+    height: 76px;
+
+    border-radius: 100%;
+  }
+
+  .info_block-label {
+    margin-top: 8px;
+    padding-left: 24px;
+
+    font-weight: normal;
+    font-style: normal;
+    line-height: 23px;
+  }
+
+  .info_block-text {
+    margin-top: 0;
+    margin-left: 20px;
+
+    font-family: FuturaBookC;
+    font-size: 0.9375rem;
+    line-height: 190%;
+
+    color: #959595;
+  }
+
+  .info_block-button {
+    width: 294px;
+    margin-top: 62px;
+  }
+}
+
+.info_block-head {
+  display: flex;
+
+  margin-top: 34px;
+  margin-left: 20px;
+}
+
+.first_client {
+  .info_block-button {
+    background: url("../images/first_client_project_info.png") no-repeat;
+  }
+
+  .info_block-client_image {
+    background: url("../images/first_client.png") no-repeat;
+  }
+}
+
+.second_client {
+  .info_block-button {
+    background: url("../images/second_client_project_info.png") no-repeat;
+  }
+
+  .info_block-client_image {
+    background: url("../images/second_client.png") no-repeat;
+  }
+}
+
+.third_client {
+  .info_block-button {
+    background: url("../images/third_client_project_info.png") no-repeat;
+  }
+
+  .info_block-client_image {
+    background: url("../images/third_client.png") no-repeat;
   }
 }
