@@ -10,4 +10,105 @@
 
     background: linear-gradient(to top, #131313, #131313 45%, #fff 45%, #fff);
   }
+
+  * {
+    background: transparent;
+  }
+
+  .checkbox_container {
+    width: 295px;
+    margin-top: 48px;
+
+    font-family: $FuturaBookC;
+    font-size: 1rem;
+    line-height: 22px;
+
+    color: #ffffff;
+
+    @include on_page_center();
+  }
+
+  .styled-checkbox {
+    margin-top: 3px;
+  }
+
+  .question-input {
+    font-family: FuturaBookC;
+    font-size: 1.125rem;
+    line-height: 24px;
+
+    color: #ffffff;
+  }
+  .form-label {
+    top: -18px;
+    font-family: $FuturaBookC;
+    color: #ffffff80;
+  }
+
+  .form-submit {
+    display: block;
+    margin-top: 49px;
+    width: 200px;
+    height: 51px;
+    font-family: $FuturaDemiC;
+    font-size: 0.9375rem;
+    @include on_page_center();
+    line-height: 26px;
+  }
+}
+
+.question_form_container {
+  padding-top: 46px;
+}
+
+.form_container {
+  width: 883px;
+  height: 445px;
+
+  background: #181818;
+
+  @include on_page_center();
+}
+
+.forms_element_container {
+  width: 520px;
+
+  @include on_page_center();
+}
+
+.form_container-label {
+  padding-top: 33px;
+
+  font-family: $YesevaOne;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 28px;
+
+  color: #ffffff;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @include on_page_center();
+}
+
+.name_phone_container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-top: 60px;
+
+  * {
+    width: 231px;
+  }
+}
+
+.form_container-question {
+  width: 100%;
+}
+
+.question_input {
+  margin-top: 67px;
 }
