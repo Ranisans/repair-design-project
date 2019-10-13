@@ -61,3 +61,13 @@
 .logo_block-instagram {
   background-image: url("../images/instagram_icon.svg");
 }
+
+.detail-map {
+  margin-top: 43px;
+  @include on_page_center();
+
+  width: 925px;
+  height: 465px;
+
+  background: url("../images/map_image.png") no-repeat;
+}
