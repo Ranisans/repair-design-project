@@ -2,10 +2,15 @@
 //TODO Phone number must contain href of type tel.
 
 .footer {
-  width: 100%;
   display: none;
 
-  @include hidden_in_mobile();
+  width: 100%;
+
+  text-transform: uppercase;
+
+  .header_container {
+    padding-top: 20px;
+  }
 
   @media #{$information_desktop} {
     display: inline-block;
