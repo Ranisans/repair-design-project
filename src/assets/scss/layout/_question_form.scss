@@ -59,11 +59,19 @@
 
 .form_container {
   width: 883px;
+
   height: 445px;
 
   background: #181818;
 
   @include on_page_center();
+
+  .flex_container {
+    width: 520px;
+    height: 320px;
+
+    @include on_page_center();
+  }
 }
 
 .forms_element_container {
@@ -73,6 +81,7 @@
 }
 
 .form_container-label {
+  margin-bottom: 0;
   padding-top: 33px;
 
   font-family: $YesevaOne;
