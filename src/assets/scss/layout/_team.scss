@@ -175,4 +175,5 @@
   text-align: center;
 
   @include on_page_center();
+  @include hidden_in_mobile();
 }
