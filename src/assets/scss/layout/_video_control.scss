@@ -92,6 +92,7 @@
   @media #{$information_mobile} {
     width: 37px;
     height: 37px;
+
     background-size: contain;
   }
 }
@@ -103,6 +104,10 @@
   border-bottom: 2px solid $Gold;
 
   @include on_page_center();
+
+  @media #{$information_mobile} {
+    margin-top: 28px;
+  }
 }
 
 .video_control-text {
@@ -116,6 +121,20 @@
   text-align: center;
 
   @include on_page_center();
+
+  @media #{$information_mobile} {
+    width: 340px;
+    margin-top: 16px;
+
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+
+    color: #ffffff;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .video_control_form {
