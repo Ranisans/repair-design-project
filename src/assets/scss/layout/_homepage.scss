@@ -1,4 +1,5 @@
 //TODO Interactive "scroll down".
+//TODO set second picture in full size (overflow hidden)
 
 .homepage {
   position: relative;
@@ -209,6 +210,8 @@
   margin-top: 159px;
 
   background-color: #131313;
+
+  @include hidden_in_mobile();
 }
 
 .header_scroll-label {
