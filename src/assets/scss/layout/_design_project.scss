@@ -1,3 +1,4 @@
+//TODO add new images to designs_container-design
 .design_projects {
   width: 100%;
   height: 910px;
@@ -12,6 +13,7 @@
 
   @media #{$information_mobile} {
     background: #131313;
+    height: 1770px;
   }
 
   .logo_block {
@@ -91,6 +93,7 @@
 
   width: 392px;
   height: 421px;
+  background: no-repeat;
 
   .info_block {
     position: absolute;
@@ -100,26 +103,51 @@
     width: 330px;
 
     background: #ffffff;
+
+    @media #{$information_mobile} {
+      position: static;
+      width: 270px;
+      margin-top: 223px;
+    }
   }
 
   .info_block-label {
     padding-top: 6px;
+    @media #{$information_mobile} {
+      padding-top: 16px;
+    }
   }
 
   .info_block_item {
     font-size: $size15px;
+
+    &:nth-child(n + 8) {
+      @include hidden_in_mobile();
+    }
   }
 
   .info_block-button {
     height: 54px;
     margin-top: 17px;
-    padding-left: 31px;
+    margin-left: 31px;
 
     text-align: left;
+
+    @media #{$information_mobile} {
+      height: 40px;
+      width: 190px;
+      margin-top: 10px;
+      margin-left: 0px;
+      text-align: center;
+    }
   }
 
   @media #{$information_mobile} {
     background-size: contain;
+
+    .info_block-list {
+      margin-top: 9px;
+    }
   }
 }
 
@@ -130,7 +158,7 @@
   .info_block {
     height: 210px;
     @media #{$information_mobile} {
-      height: 197px;
+      height: 177px;
     }
   }
 }
@@ -139,10 +167,14 @@
   background-image: url("../images/design_shadow.png"),
     url("../images/designer_back.png");
 
+  @media #{$information_mobile} {
+    margin-top: 60px;
+  }
+
   .info_block {
     height: 287px;
     @media #{$information_mobile} {
-      height: 261px;
+      height: 241px;
     }
   }
 }
@@ -151,7 +183,14 @@
   background-image: url("../images/design_shadow.png"),
     url("../images/designer_full.png");
 
+  @media #{$information_mobile} {
+    margin-top: 121px;
+  }
+
   .info_block {
     height: 261px;
+    @media #{$information_mobile} {
+      height: 241px;
+    }
   }
 }
