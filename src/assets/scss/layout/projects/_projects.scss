@@ -29,6 +29,10 @@
     margin-left: 10px;
     padding-top: 35px;
   }
+
+  .projects_sliders {
+    @include hidden_in_mobile();
+  }
 }
 
 .projects_container * {
