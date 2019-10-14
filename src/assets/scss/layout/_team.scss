@@ -56,6 +56,11 @@
   margin-top: 81px;
 
   @include on_page_center();
+
+  @media #{$information_mobile} {
+    width: 310px;
+    margin-left: 53px;
+  }
 }
 
 .worker_container {
@@ -63,6 +68,10 @@
 
   width: 272px;
   height: 357px;
+
+  @media #{$information_mobile} {
+    width: 303px;
+  }
 
   .info_block {
     width: 233px;
@@ -119,6 +128,9 @@
   background: url("../images/project_manager_face.png") no-repeat;
   background-position-x: -15px;
 
+  @media #{$information_mobile} {
+    background-position-x: 0;
+  }
   .worker_container-logo {
     background: url("../images/project_manager_logo.png");
   }
@@ -128,6 +140,11 @@
   background: url("../images/designer_face.png") no-repeat;
   background-position-x: -62px;
 
+  @media #{$information_mobile} {
+    margin-top: 169px;
+    background-position-x: -53px;
+  }
+
   .worker_container-logo {
     background: url("../images/designer_logo.png");
   }
@@ -136,6 +153,11 @@
 .foreman_block {
   background: url("../images/foreman_face.png") no-repeat;
   background-position-x: -62px;
+
+  @media #{$information_mobile} {
+    margin-top: 144px;
+    background-position-x: -53px;
+  }
 
   .worker_container-logo {
     background: url("../images/foreman_logo.png");
