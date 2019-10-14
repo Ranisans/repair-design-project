@@ -72,6 +72,15 @@
 
   letter-spacing: 0.3px;
   text-transform: uppercase;
+
+  @media #{$information_mobile} {
+    padding-left: 8px;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 138.6%;
+  }
 }
 
 .projects-text {
@@ -85,6 +94,11 @@
   color: #ffffff;
 
   letter-spacing: 0.5px;
+
+  @media #{$information_mobile} {
+    padding-left: 8px;
+    letter-spacing: -0.2px;
+  }
 }
 
 .projects-address_label {
