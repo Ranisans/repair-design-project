@@ -52,6 +52,12 @@
   margin-top: 31px;
 
   @include on_page_center();
+
+  @media #{$information_mobile} {
+    width: 340px;
+    height: 207px;
+    margin-top: 40px;
+  }
 }
 
 .video_container-video {
@@ -59,12 +65,20 @@
   height: 100%;
 
   background: url("../images/video_poster.png");
+
+  @media #{$information_mobile} {
+    background: url("../images/video_poster_mobile.png");
+  }
 }
 
 .video_controller {
   position: absolute;
   top: 174px;
   left: 365px;
+  @media #{$information_mobile} {
+    top: 85px;
+    left: 152px;
+  }
 }
 
 .video_controller-play {
@@ -75,6 +89,11 @@
   border: none;
   border-radius: 100%;
   background-image: url("../images/play_button.png");
+  @media #{$information_mobile} {
+    width: 37px;
+    height: 37px;
+    background-size: contain;
+  }
 }
 
 .video_control-line {
