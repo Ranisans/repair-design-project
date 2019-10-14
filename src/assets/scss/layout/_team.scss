@@ -37,6 +37,13 @@
 
   .label-heading {
     width: 460px;
+    @media #{$information_mobile} {
+      width: 340px;
+      margin-top: 20px;
+
+      font-size: 0.9375rem;
+      line-height: 1.25rem;
+    }
   }
 
   .logo_block-image {
