@@ -12,6 +12,11 @@
     height: 955px;
   }
 
+  @media #{$information_mobile} {
+    height: 525px;
+    background-image: none;
+  }
+
   * {
     background: transparent;
   }
@@ -19,6 +24,13 @@
   .logo_block {
     width: 589px;
     padding-top: 274px;
+
+    @media #{$information_mobile} {
+      order: 1;
+
+      width: 589px;
+      padding-top: 39px;
+    }
   }
 
   .logo_block-text {
@@ -31,6 +43,17 @@
     line-height: 28px;
 
     color: $Gold;
+
+    @media #{$information_mobile} {
+      font-size: 1.125rem;
+      line-height: 1.5625rem;
+    }
+
+    @media #{$information_tablets} {
+      br {
+        display: none;
+      }
+    }
   }
 
   .logo_block-image {
@@ -41,12 +64,22 @@
     height: 28px;
     margin-top: 22px;
 
+    @media #{$information_mobile} {
+      width: 100px;
+    }
+
     * {
       width: 28px;
       height: 28px;
 
       border: none;
       background-repeat: no-repeat;
+
+      @media #{$information_mobile} {
+        width: 39px;
+        height: 39px;
+        background-size: cover;
+      }
     }
   }
 }
@@ -59,12 +92,20 @@
   background-image: url("../images/instagram_icon.svg");
 }
 
-.detail-map {
-  margin-top: 43px;
-  @include on_page_center();
-
+.details-map {
   width: 925px;
   height: 465px;
+  margin-top: 43px;
 
   background: url("../images/map_image.png") no-repeat;
+
+  @include on_page_center();
+
+  @media #{$information_mobile} {
+    width: 340px;
+    height: 255px;
+    margin-top: 57px;
+
+    background-size: cover;
+  }
 }
