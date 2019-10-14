@@ -57,11 +57,12 @@
   grid-row: 2 / span 8;
 
   @media #{$information_mobile} {
-    grid-column: 1 / span 2;
-    grid-row: 3;
     width: 340px;
     height: 242px;
     margin-left: 8px;
+
+    grid-column: 1 / span 2;
+    grid-row: 3;
   }
 }
 
@@ -73,6 +74,7 @@
   width: 679px;
 
   background-image: url("../images/admiral.png") !important;
+
   @include hidden_in_mobile();
 }
 
@@ -87,12 +89,13 @@
     width: 340px;
     height: 242px;
     margin-left: 0;
+
     background-position: 0 !important;
     background-size: contain !important;
   }
 }
 
-.projects_images-slider_right {
+.projects_images-slider {
   position: absolute;
   top: 205px;
   right: 44px;
@@ -106,11 +109,45 @@
   background-color: $Gold !important;
 
   span {
-    padding-top: 5px;
-    padding-left: 3px;
+    width: 9px;
+    height: 16px;
 
     font-size: 4rem;
 
     content: url("../images/arrow.svg");
+    text-align: center;
+
+    @media #{$information_mobile} {
+      width: 6px;
+      height: 10px;
+    }
+  }
+
+  @media #{$information_mobile} {
+    top: 103px;
+
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.projects_images-slider_right {
+  right: 44px;
+
+  @media #{$information_mobile} {
+    right: 13px;
+  }
+}
+
+.projects_images-slider_left {
+  left: 14px;
+
+  @media #{$information_tablets} {
+    display: none;
+    visibility: hidden;
+  }
+
+  span {
+    transform: rotate(180deg);
   }
 }
