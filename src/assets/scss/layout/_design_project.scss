@@ -10,27 +10,51 @@
     #fff 100%
   );
 
-  @include hidden_in_mobile();
+  @media #{$information_mobile} {
+    background: #131313;
+  }
 
   .logo_block {
     width: 257px;
     padding-top: 69px;
+    @media #{$information_mobile} {
+      padding-top: 36px;
+    }
   }
 
   .logo_block-text {
     font-weight: 300;
 
     color: #181818;
+
+    @media #{$information_mobile} {
+      margin-bottom: 0;
+
+      color: #ffffff;
+    }
   }
 
   .logo_block-image {
     content: url("../images/design_icon.png");
+    @media #{$information_mobile} {
+      margin-top: 14px;
+    }
   }
 
   .label-heading {
     width: 700px;
 
     color: #363636;
+
+    @media #{$information_mobile} {
+      width: 290px;
+      margin-top: 20px;
+
+      font-size: 0.9375rem;
+      line-height: 1.25rem;
+
+      color: #ffffff;
+    }
   }
 }
 
