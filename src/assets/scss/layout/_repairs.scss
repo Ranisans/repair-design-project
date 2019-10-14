@@ -17,6 +17,9 @@
     padding-top: 32px;
 
     color: #181818;
+    @media #{$information_mobile} {
+      padding-top: 43px;
+    }
   }
 
   .logo_block-image {
@@ -34,10 +37,16 @@
 .repairs_types {
   width: 1236px;
   margin: 31px 100px 0 100px;
+
+  @media #{$information_mobile} {
+    width: 345px;
+    margin: 39px 0 0 18px;
+  }
 }
 
 .repairs_types-type {
   width: 392px;
+
   .info_block {
     width: 330px;
     margin-top: 295px;
@@ -45,16 +54,45 @@
 
     background-color: #ffffff;
   }
+
+  @media #{$information_mobile} {
+    width: 340px;
+
+    .info_block {
+      width: 270px;
+      margin-top: 223px;
+      margin-right: 70px;
+      margin-left: 0;
+
+      background-color: #ffffff;
+    }
+  }
 }
 
 .repairs_types-redecoration {
   background: url("../images/redecoration_back.png") no-repeat;
+  @media #{$information_mobile} {
+    background-size: contain;
+  }
 }
 
 .repairs_types-overhaul {
   background: url("../images/overhaul_back.png") no-repeat;
+  @media #{$information_mobile} {
+    margin-top: 58px;
+
+    background-size: contain;
+  }
 }
 
 .repairs_types-designer {
   background: url("../images/designer_back.png") no-repeat;
+  @media #{$information_mobile} {
+    margin-top: 59px;
+
+    background-size: contain;
+  }
+}
+
+@media #{$information_mobile} {
 }
