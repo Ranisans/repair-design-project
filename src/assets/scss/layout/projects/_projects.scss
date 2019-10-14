@@ -21,6 +21,14 @@
 
   grid-template-columns: 190px 250px 280px 180px 290px auto;
   grid-template-rows: 75px 80px 130px 40px 66px 40px 60px 90px;
+
+  @media #{$information_mobile} {
+    grid-template-columns: 170px 170px;
+    grid-template-rows: 75px 80px 130px 40px 66px 40px 60px;
+
+    margin-left: 10px;
+    padding-top: 35px;
+  }
 }
 
 .projects_container * {
