@@ -33,7 +33,7 @@
 }
 
 .projects-description {
-  padding-left: 11px;
+  margin-left: 11px;
 
   font-family: $FuturaBookC;
   font-size: 1.1rem;
@@ -45,6 +45,21 @@
 
   grid-column: 1 / span 2;
   grid-row: 3;
+
+  @media #{$information_mobile} {
+    width: 315px;
+    margin-top: 11px;
+    margin-left: 21px;
+
+    font-size: 0.875rem;
+    line-height: 158.48%;
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
 }
 
 .projects-label {
