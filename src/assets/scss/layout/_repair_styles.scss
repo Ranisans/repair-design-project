@@ -16,6 +16,10 @@
       #fff 85%,
       #fff 100%
     );
+
+    .header_scroll {
+      display: none;
+    }
   }
 
   @media #{$information_mobile} {
@@ -28,6 +32,13 @@
       #fff 31.1%,
       #fff 100%
     );
+
+    .header_scroll {
+      position: absolute;
+      top: 0;
+
+      display: block;
+    }
   }
 }
 
@@ -36,6 +47,8 @@
 }
 
 .repair_styles_container {
+  position: relative;
+
   display: grid;
 
   padding-top: 45px;
@@ -50,6 +63,7 @@
 
   @media #{$information_mobile} {
     display: block;
+
     background-image: none;
   }
 }
@@ -152,6 +166,7 @@
     height: 242px;
     margin-top: 32px;
     margin-left: 18px;
+
     content: url("../images/repair_styles_mobile_back.png");
   }
 }
@@ -187,4 +202,23 @@
 
   grid-column: 3;
   grid-row: 2 / span 3;
+}
+
+.sliders_container {
+  .projects_images-slider {
+    display: none;
+  }
+  @media #{$information_mobile} {
+    .projects_images-slider {
+      display: block;
+    }
+    .projects_images-slider_right {
+      top: 277px;
+      right: 29px;
+    }
+    .projects_images-slider_left {
+      top: 277px;
+      left: 31px;
+    }
+  }
 }
