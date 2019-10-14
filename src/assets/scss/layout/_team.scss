@@ -14,6 +14,23 @@
     );
   }
 
+  @media #{$information_mobile} {
+    .logo_block {
+      padding-top: 57px;
+    }
+
+    .logo_block-text {
+      margin-bottom: 0;
+
+      font-size: 1.375rem;
+      line-height: 1.875rem;
+    }
+
+    .logo_block-image {
+      margin-top: 10px;
+    }
+  }
+
   * {
     background: transparent;
   }
