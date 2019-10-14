@@ -17,6 +17,18 @@
       #fff 100%
     );
   }
+
+  @media #{$information_mobile} {
+    height: 430px;
+
+    background: linear-gradient(
+      to top,
+      #131313,
+      #131313 31.1%,
+      #fff 31.1%,
+      #fff 100%
+    );
+  }
 }
 
 .repair_styles * {
@@ -38,6 +50,7 @@
 
   @media #{$information_mobile} {
     display: block;
+    background-image: none;
   }
 }
 
@@ -116,6 +129,13 @@
 
 .repair_styles-image {
   width: 354px;
+  @media #{$information_mobile} {
+    width: 340px;
+
+    &:not(:nth-child(2)) {
+      display: none;
+    }
+  }
 }
 
 .repair_styles-first_image {
@@ -127,6 +147,13 @@
 
   grid-column: 2;
   grid-row: 1 / span 2;
+
+  @media #{$information_mobile} {
+    height: 242px;
+    margin-top: 32px;
+    margin-left: 18px;
+    content: url("../images/repair_styles_mobile_back.png");
+  }
 }
 
 .repair_styles-second_image {
