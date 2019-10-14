@@ -13,9 +13,16 @@
     background: linear-gradient(0deg, #fff 66%, #131313 34%);
   }
 
+  @media #{$information_mobile} {
+    height: 752px;
+  }
+
   .logo_block {
     width: 200px;
     padding-top: 45px;
+    @media #{$information_mobile} {
+      padding-top: 25px;
+    }
   }
 
   .logo_block-text {
@@ -26,6 +33,10 @@
     margin-top: 14px;
 
     content: url("../images/camera.png");
+
+    @media #{$information_mobile} {
+      margin-top: 17px;
+    }
   }
 }
 
