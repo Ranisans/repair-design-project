@@ -3,9 +3,7 @@
 
   text-transform: uppercase;
 
-  @media #{$information_desktop} {
-    height: 83px;
-  }
+  height: 83px;
 
   @media #{$information_mobile} {
     height: 57px;
@@ -34,6 +32,13 @@
   padding-right: 83px;
   padding-left: 83px;
 
+  @media #{$information_tablets} {
+    justify-content: space-around;
+
+    width: 100%;
+    padding: 0;
+  }
+
   @media #{$information_mobile} {
     justify-content: space-around;
 
@@ -52,14 +57,24 @@
   @media #{$information_mobile} {
     padding-top: 13px;
   }
+
+  @media #{$information_tablets} {
+    cursor: pointer;
+  }
+}
+
+.header_nav {
+  @include hidden_in_mobile();
+
+  @media #{$information_tablets} {
+    display: none;
+  }
 }
 
 .header_nav-menu {
   padding-top: 21px;
 
   list-style-type: none;
-
-  @include hidden_in_mobile();
 }
 
 .header_nav-element {
