@@ -196,9 +196,8 @@
 }
 
 .homepage_buttons-submit::before {
-  @media #{$information_tablets} {
-    content: "SUBMIT YOUR APPLICATION";
-  }
+  content: "SUBMIT YOUR APPLICATION";
+
   @media #{$information_mobile} {
     content: "APPLICATION";
   }
