@@ -1,12 +1,14 @@
 .repair_styles {
   width: 100%;
-  height: 2180px;
+  height: 1120px;
 
   background: linear-gradient(0deg, #131313 89.1%, #fff 89.1%);
 
-  @media #{$information_desktop} {
-    height: 1120px;
+  .header_scroll {
+    display: none;
+  }
 
+  @media #{$information_desktop} {
     background: linear-gradient(
       to top,
       #fff,
@@ -16,10 +18,6 @@
       #fff 85%,
       #fff 100%
     );
-
-    .header_scroll {
-      display: none;
-    }
   }
 
   @media #{$information_mobile} {
@@ -60,6 +58,11 @@
 
   grid-template-columns: 550px 397px 400px;
   grid-template-rows: 310px 350px 370px;
+
+  @media #{$information_tablets} {
+    grid-template-columns: 480px auto;
+    grid-template-rows: 310px 350px 370px;
+  }
 
   @media #{$information_mobile} {
     display: block;
@@ -191,6 +194,8 @@
 
   grid-column: 3;
   grid-row: 1;
+
+  @include hidden_in_tablets();
 }
 
 .repair_styles-fourth_image {
@@ -202,22 +207,25 @@
 
   grid-column: 3;
   grid-row: 2 / span 3;
+
+  @include hidden_in_tablets();
 }
 
 .sliders_container {
   .projects_images-slider {
     display: none;
   }
+
   @media #{$information_mobile} {
     .projects_images-slider {
+      top: 277px;
+
       display: block;
     }
     .projects_images-slider_right {
-      top: 277px;
       right: 29px;
     }
     .projects_images-slider_left {
-      top: 277px;
       left: 31px;
     }
   }
