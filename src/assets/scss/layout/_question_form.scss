@@ -3,13 +3,16 @@
 
 .question_form {
   width: 100%;
-  height: 565px;
   padding-top: 63px;
 
   @media #{$information_desktop} {
     height: 223px;
 
     background-color: #fff;
+  }
+
+  @media #{$information_mobile} {
+    height: 502px;
   }
 
   * {
