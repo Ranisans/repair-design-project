@@ -5,7 +5,7 @@
     url("../images/details_image.png");
 
   @media #{$information_tablets} {
-    height: 721px;
+    height: 660px;
   }
 
   @media #{$information_desktop} {
@@ -14,6 +14,7 @@
 
   @media #{$information_mobile} {
     height: 525px;
+
     background-image: none;
   }
 
@@ -30,6 +31,12 @@
 
       width: 589px;
       padding-top: 39px;
+    }
+
+    @media #{$information_tablets} {
+      order: 1;
+
+      padding-top: 25px;
     }
   }
 
@@ -78,6 +85,7 @@
       @media #{$information_mobile} {
         width: 39px;
         height: 39px;
+
         background-size: cover;
       }
     }
