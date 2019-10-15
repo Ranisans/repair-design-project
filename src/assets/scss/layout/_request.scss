@@ -13,6 +13,7 @@
   background-repeat: no-repeat;
 
   @include hidden_in_mobile();
+  @include hidden_in_tablets();
 
   @media #{$information_desktop} {
     height: 800px;
