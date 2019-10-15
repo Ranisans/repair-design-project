@@ -2,6 +2,7 @@
   width: 100%;
 
   @include hidden_in_mobile();
+  @include hidden_in_tablets();
 
   * {
     background: transparent;
