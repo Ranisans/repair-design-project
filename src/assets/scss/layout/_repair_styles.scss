@@ -69,7 +69,7 @@
 }
 
 .styles_menu {
-  margin-top: 239px;
+  margin-top: 236px;
   margin-left: 100px;
 
   grid-column: 1;
@@ -85,12 +85,12 @@
   width: 300px;
 
   font-family: $YesevaOne;
-  font-size: 1.67rem;
-  line-height: 35px;
+  font-size: 1.6875rem;
+  font-weight: normal;
+  line-height: 2.3125rem;
 
   color: $Gold;
 
-  letter-spacing: 0.2px;
   text-transform: uppercase;
 
   @media #{$information_mobile} {
