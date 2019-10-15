@@ -475,30 +475,26 @@
     <section class="question_form">
       <div class="question_form_container">
         <form action="" class="form_container">
-          <h2 class="form_container-label">have any questions?</h2>
-          <div class="forms_element_container">
-            <div class="flex_container">
-              <div class="name_phone_container">
-                <div class="input_container name_container">
-                  <label for="question_name" class="form-label">Name</label>
-                  <input type="text" id="question_name" name="name" placeholder="What is your name:" class="form-input question-input">
-                </div>
-                <div class="input_container phone_container">
-                  <label for="question_telephone" class="form-label">Phone</label>
-                  <input type="text" id="question_telephone" name="telephone" placeholder="Your phone number:" class="form-input question-input">
-                </div>
-              </div>
-              <div class="input_container question_input">
-                <label for="question" class="form-label">Question</label>
-                <input type="text" id="question" name="telephone" placeholder="I want to know:" class="form-input form_container-question question-input">
-              </div>
-              <div class="checkbox_container">
-                <input type="checkbox" class="styled-checkbox" id="question-consent" value="consent" checked>
-                <label for="question-consent">I agree to the processing of personal data
-                </label>
-              </div>
-              <button class="form-submit">submit</button>
+          <div class="grid_container">
+            <h2 class="form_container-label">have any questions?</h2>
+            <div class="input_container form_container_name">
+              <label for="question_name" class="form-label">Name</label>
+              <input type="text" id="question_name" name="name" placeholder="What is your name:" class="form-input question-input">
             </div>
+            <div class="input_container form_container_phone">
+              <label for="question_telephone" class="form-label">Phone</label>
+              <input type="text" id="question_telephone" name="telephone" placeholder="Your phone number:" class="form-input question-input">
+            </div>
+            <div class="input_container form_container_question">
+              <label for="question" class="form-label">Question</label>
+              <input type="text" id="question" name="telephone" placeholder="I want to know:" class="form-input question-input">
+            </div>
+            <div class="checkbox_container form_container_checkbox">
+              <input type="checkbox" class="styled-checkbox" id="question-consent" value="consent" checked>
+              <label for="question-consent">I agree to the processing of personal data
+              </label>
+            </div>
+            <button class="form-submit form_container-submit">submit</button>
           </div>
         </form>
       </div>
