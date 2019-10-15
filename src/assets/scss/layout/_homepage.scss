@@ -37,6 +37,10 @@
   grid-template-columns: 82px 740px;
   grid-template-rows: 103px 109px 100px;
 
+  @media #{$information_tablets} {
+    padding-top: 88px;
+  }
+
   @media #{$information_mobile} {
     display: block;
 
@@ -212,6 +216,7 @@
   background-color: #131313;
 
   @include hidden_in_mobile();
+  @include hidden_in_tablets();
 }
 
 .header_scroll-label {
