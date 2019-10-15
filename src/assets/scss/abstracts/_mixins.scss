@@ -20,6 +20,13 @@
   }
 }
 
+@mixin hidden_in_tablets {
+  @media #{$information_tablets} {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 @mixin on_page_center {
   margin-left: auto;
   margin-right: auto;

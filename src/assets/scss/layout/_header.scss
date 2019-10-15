@@ -66,9 +66,7 @@
 .header_nav {
   @include hidden_in_mobile();
 
-  @media #{$information_tablets} {
-    display: none;
-  }
+  @include hidden_in_tablets();
 }
 
 .header_nav-menu {
