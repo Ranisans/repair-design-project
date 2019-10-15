@@ -56,9 +56,10 @@
       line-height: 1.5625rem;
     }
 
-    @media #{$information_tablets} {
-      br {
-        display: none;
+    br {
+      display: none;
+      @media #{$information_mobile} {
+        display: inline;
       }
     }
   }
