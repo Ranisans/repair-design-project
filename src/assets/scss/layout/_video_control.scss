@@ -4,16 +4,21 @@
 .video_control {
   width: 100%;
 
-  background: linear-gradient(0deg, #fff 6.3%, #131313 6.3%);
-
   @media #{$information_desktop} {
     height: 1080px;
 
     background: linear-gradient(0deg, #fff 66%, #131313 34%);
   }
 
+  @media #{$information_tablets} {
+    height: 1080px;
+
+    background: linear-gradient(0deg, #fff 22.3%, #131313 22.3%);
+  }
+
   @media #{$information_mobile} {
     height: 853px;
+
     background: #131313;
   }
 
@@ -121,6 +126,10 @@
   text-align: center;
 
   @include on_page_center();
+
+  @media #{$information_tablets} {
+    color: #ffffff;
+  }
 
   @media #{$information_mobile} {
     width: 340px;
