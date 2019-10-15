@@ -9,6 +9,12 @@
     height: 770px;
   }
 
+  @media #{$information_tablets} {
+    height: 1200px;
+
+    @include on_page_center();
+  }
+
   * {
     background: transparent;
   }
@@ -42,6 +48,10 @@
   width: 1236px;
 
   @include on_page_center();
+
+  @media #{$information_tablets} {
+    width: 800px;
+  }
 }
 
 .client_container {
@@ -111,6 +121,10 @@
 }
 
 .third_client {
+  @media #{$information_tablets} {
+    @include on_page_center();
+  }
+
   .info_block-button {
     background: url("../images/third_client_project_info.png") no-repeat;
   }
