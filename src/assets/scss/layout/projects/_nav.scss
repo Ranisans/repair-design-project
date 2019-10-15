@@ -9,6 +9,7 @@
   grid-row: 1;
 
   @include hidden_in_mobile();
+
   @include hidden_in_tablets();
 }
 
@@ -85,11 +86,11 @@
 
   background-image: url("../images/admiral.png") !important;
 
+  @include hidden_in_mobile();
+
   @media #{$information_tablets} {
     background-size: contain !important;
   }
-
-  @include hidden_in_mobile();
 }
 
 .projects_images-second {
@@ -122,25 +123,11 @@
   border: none;
   border-radius: 100%;
   outline: none;
-  background-color: $Gold !important;
+  background-image: url("../images/sliders_arrow.png") !important;
+  background-size: contain !important;
 
   @media #{$information_tablets} {
     top: 175px;
-  }
-
-  span {
-    width: 9px;
-    height: 16px;
-
-    font-size: 4rem;
-
-    content: url("../images/arrow.svg");
-    text-align: center;
-
-    @media #{$information_mobile} {
-      width: 6px;
-      height: 10px;
-    }
   }
 
   @media #{$information_mobile} {
@@ -166,12 +153,10 @@
 .projects_images-slider_left {
   left: 14px;
 
+  transform: rotate(180deg);
+
   @media #{$information_desktop} {
     display: none;
     visibility: hidden;
-  }
-
-  span {
-    transform: rotate(180deg);
   }
 }
