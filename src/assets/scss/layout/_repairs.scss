@@ -8,6 +8,10 @@
     height: 900px;
   }
 
+  @media #{$information_tablets} {
+    height: 1500px;
+  }
+
   .logo_block {
     width: 255px;
   }
@@ -37,6 +41,12 @@
 .repairs_types {
   width: 1236px;
   margin: 31px 100px 0 100px;
+
+  @media #{$information_tablets} {
+    width: 800px;
+
+    @include on_page_center();
+  }
 
   @media #{$information_mobile} {
     width: 345px;
@@ -92,7 +102,10 @@
 
     background-size: contain;
   }
-}
 
-@media #{$information_mobile} {
+  @media #{$information_tablets} {
+    margin-top: 59px;
+
+    @include on_page_center();
+  }
 }
