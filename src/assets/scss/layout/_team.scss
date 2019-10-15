@@ -1,6 +1,5 @@
 .team {
   width: 100%;
-  height: 1685px;
 
   @media #{$information_desktop} {
     height: 912px;
@@ -14,7 +13,13 @@
     );
   }
 
+  @media #{$information_tablets} {
+    height: 1430px;
+  }
+
   @media #{$information_mobile} {
+    height: 1685px;
+
     .logo_block {
       padding-top: 57px;
     }
@@ -56,6 +61,12 @@
   margin-top: 81px;
 
   @include on_page_center();
+
+  @media #{$information_tablets} {
+    width: 700px;
+
+    @include on_page_center();
+  }
 
   @media #{$information_mobile} {
     width: 310px;
@@ -154,6 +165,12 @@
   background: url("../images/foreman_face.png") no-repeat;
   background-position-x: -62px;
 
+  @media #{$information_tablets} {
+    margin-top: 144px;
+
+    @include on_page_center();
+  }
+
   @media #{$information_mobile} {
     margin-top: 144px;
     background-position-x: -53px;
@@ -176,4 +193,8 @@
 
   @include on_page_center();
   @include hidden_in_mobile();
+
+  @media #{$information_tablets} {
+    color: #ffffff;
+  }
 }
