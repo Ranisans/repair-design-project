@@ -5,8 +5,14 @@
 @import "nav";
 
 .projects {
+  overflow: hidden;
+
   width: 100%;
   height: 700px;
+
+  @media #{$information_tablets} {
+    height: 450px;
+  }
 
   @media #{$information_desktop} {
     height: 660px;
@@ -22,16 +28,25 @@
   grid-template-columns: 190px 250px 280px 180px 290px auto;
   grid-template-rows: 75px 80px 130px 40px 66px 40px 60px 90px;
 
-  @media #{$information_mobile} {
-    grid-template-columns: 160px 180px;
-    grid-template-rows: 75px 137px 263px 35px 60px 35px 60px;
-
+  @media #{$information_tablets} {
     margin-left: 10px;
     padding-top: 35px;
+
+    grid-template-columns: 170px 170px auto;
+    grid-template-rows: 80px 130px 50px 56px 50px 56px;
+  }
+
+  @media #{$information_mobile} {
+    margin-left: 10px;
+    padding-top: 35px;
+
+    grid-template-columns: 160px 180px;
+    grid-template-rows: 75px 137px 263px 35px 60px 35px 60px;
   }
 
   .projects_sliders {
     @include hidden_in_mobile();
+    @include hidden_in_tablets();
   }
 }
 

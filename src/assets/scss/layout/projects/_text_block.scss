@@ -17,6 +17,12 @@
   grid-column: 1;
   grid-row: 2;
 
+  @media #{$information_tablets} {
+    text-align: center;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
   @media #{$information_mobile} {
     width: 130px;
     margin-left: 110px;
@@ -45,6 +51,12 @@
 
   grid-column: 1 / span 2;
   grid-row: 3;
+
+  @media #{$information_tablets} {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    text-align: center;
+  }
 
   @media #{$information_mobile} {
     width: 315px;
@@ -104,6 +116,11 @@
 .projects-address_label {
   grid-column: 1;
   grid-row: 4;
+
+  @media #{$information_tablets} {
+    grid-column: 1;
+    grid-row: 3;
+  }
 }
 
 .projects-address {
@@ -111,34 +128,69 @@
 
   grid-column: 1;
   grid-row: 5;
+
+  @media #{$information_tablets} {
+    grid-column: 1;
+    grid-row: 4;
+  }
 }
 
 .projects-area_label {
   grid-column: 2;
   grid-row: 4;
+
+  @media #{$information_tablets} {
+    grid-column: 2;
+    grid-row: 3;
+  }
 }
 
 .projects-area {
   grid-column: 2;
   grid-row: 5;
+
+  @media #{$information_tablets} {
+    grid-column: 2;
+    grid-row: 4;
+  }
 }
 
 .projects-time_label {
   grid-column: 1;
   grid-row: 6;
+
+  @media #{$information_tablets} {
+    grid-column: 1;
+    grid-row: 5;
+  }
 }
 
 .projects-time {
   grid-column: 1;
   grid-row: 7;
+
+  @media #{$information_tablets} {
+    grid-column: 1;
+    grid-row: 6;
+  }
 }
 
 .projects-cost_label {
   grid-column: 2;
   grid-row: 6;
+
+  @media #{$information_tablets} {
+    grid-column: 2;
+    grid-row: 5;
+  }
 }
 
 .projects-cost {
   grid-column: 2;
   grid-row: 7;
+
+  @media #{$information_tablets} {
+    grid-column: 2;
+    grid-row: 6;
+  }
 }
