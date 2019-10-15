@@ -12,8 +12,15 @@
   );
 
   @media #{$information_mobile} {
-    background: #131313;
     height: 1770px;
+
+    background: #131313;
+  }
+
+  @media #{$information_tablets} {
+    height: 1300px;
+
+    background: #131313;
   }
 
   .logo_block {
@@ -29,7 +36,7 @@
 
     color: #181818;
 
-    @media #{$information_mobile} {
+    @media #{$information_mobile_n_tablets} {
       margin-bottom: 0;
 
       color: #ffffff;
@@ -47,6 +54,10 @@
     width: 700px;
 
     color: #363636;
+
+    @media #{$information_tablets} {
+      color: #ffffff;
+    }
 
     @media #{$information_mobile} {
       width: 290px;
@@ -82,6 +93,11 @@
 
   @include on_page_center();
 
+  @media #{$information_tablets} {
+    width: 800px;
+    margin-top: 37px;
+  }
+
   @media #{$information_mobile} {
     width: 340px;
     margin-top: 37px;
@@ -93,6 +109,7 @@
 
   width: 392px;
   height: 421px;
+
   background: no-repeat;
 
   .info_block {
@@ -104,8 +121,9 @@
 
     background: #ffffff;
 
-    @media #{$information_mobile} {
+    @media #{$information_mobile_n_tablets} {
       position: static;
+
       width: 270px;
       margin-top: 223px;
     }
@@ -113,7 +131,7 @@
 
   .info_block-label {
     padding-top: 6px;
-    @media #{$information_mobile} {
+    @media #{$information_mobile_n_tablets} {
       padding-top: 16px;
     }
   }
@@ -122,6 +140,7 @@
     font-size: $size15px;
 
     &:nth-child(n + 8) {
+      @include hidden_in_tablets();
       @include hidden_in_mobile();
     }
   }
@@ -133,16 +152,17 @@
 
     text-align: left;
 
-    @media #{$information_mobile} {
-      height: 40px;
+    @media #{$information_mobile_n_tablets} {
       width: 190px;
-      padding-left: 0;
+      height: 40px;
       margin-top: 10px;
+      padding-left: 0;
+
       text-align: center;
     }
   }
 
-  @media #{$information_mobile} {
+  @media #{$information_mobile_n_tablets} {
     background-size: contain;
 
     .info_block-list {
@@ -157,7 +177,7 @@
 
   .info_block {
     height: 210px;
-    @media #{$information_mobile} {
+    @media #{$information_mobile_n_tablets} {
       height: 177px;
     }
   }
@@ -176,6 +196,10 @@
     @media #{$information_mobile} {
       height: 241px;
     }
+
+    @media #{$information_tablets} {
+      height: 252px;
+    }
   }
 }
 
@@ -183,14 +207,22 @@
   background-image: url("../images/design_shadow.png"),
     url("../images/designer_full.png");
 
-  @media #{$information_mobile} {
+  @media #{$information_mobile_n_tablets} {
     margin-top: 121px;
+  }
+
+  @media #{$information_tablets} {
+    @include on_page_center();
   }
 
   .info_block {
     height: 414px;
     @media #{$information_mobile} {
       height: 241px;
+    }
+
+    @media #{$information_tablets} {
+      height: 252px;
     }
   }
 }
