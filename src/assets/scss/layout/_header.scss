@@ -51,7 +51,7 @@
   color: $Gold;
 }
 
-.header-brand {
+.header_container-brand {
   padding-top: 26px;
 
   @media #{$information_mobile} {
@@ -69,19 +69,19 @@
   @include hidden_in_tablets();
 }
 
-.header_nav-menu {
+.header_menu {
   padding-top: 21px;
 
   list-style-type: none;
 }
 
-.header_nav-element {
+.header_menu-element {
   float: left;
 
   margin-right: 48px;
 }
 
-.header_nav-link {
+.header_menu-link {
   font-family: $FuturaBookC;
 
   color: inherit;
@@ -90,11 +90,11 @@
   text-decoration: none;
 }
 
-.header_nav-element:last-child {
+.header_menu-element:last-child {
   margin-right: 0;
 }
 
-.header-tel_number {
+.header_container-tel_number {
   padding-top: 35px;
 
   border-bottom: 1px solid $Gold;
@@ -109,7 +109,7 @@
   }
 }
 
-.header-call_request {
+.header_container-call_request {
   width: 161px;
   height: 37px;
   margin-top: 24px;
