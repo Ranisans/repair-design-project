@@ -1,6 +1,3 @@
-//TODO Interactive "scroll down".
-//TODO set second picture in full size (overflow hidden)
-
 .homepage {
   position: relative;
 
@@ -52,7 +49,7 @@
   background: transparent;
 }
 
-.homepage-instagram_link {
+.homepage_container-instagram_link {
   position: absolute;
   top: 103px;
   left: -46px;
@@ -80,7 +77,7 @@
   @include hidden_in_mobile();
 }
 
-.homepage-line {
+.homepage_container-line {
   display: inline-block;
 
   width: 51px;
@@ -91,7 +88,7 @@
   background-color: $Gold;
 }
 
-.homepage-tagline {
+.homepage_container-tagline {
   align-self: center;
 
   width: 520px;
@@ -120,11 +117,11 @@
   }
 }
 
-.homepage-tagline_city {
+.homepage_container-tagline_city {
   color: $Gold;
 }
 
-.homepage-offer {
+.homepage_container-offer {
   align-self: baseline;
 
   width: 460px;
