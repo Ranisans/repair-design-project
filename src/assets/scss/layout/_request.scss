@@ -47,7 +47,7 @@
   grid-template-rows: 111px 159px 162px 125px 125px;
 }
 
-.request_container-point {
+.request_container_point {
   display: flex;
 
   margin-top: 11px;
@@ -143,7 +143,7 @@
     margin-left: 47px;
   }
 
-  .form-input {
+  .input_container-input {
     width: 408px;
     height: 50px;
 
@@ -160,7 +160,7 @@
     font-size: 0.95rem;
   }
 
-  .form-label {
+  .input_container-label {
     font-family: $FuturaBookC;
 
     color: #ffffff80;
