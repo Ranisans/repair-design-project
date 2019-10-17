@@ -68,12 +68,7 @@
 .video_container-video {
   width: 100%;
   height: 100%;
-
-  background: url("../images/video_poster.png");
-
-  @media #{$information_mobile} {
-    background: url("../images/video_poster_mobile.png");
-  }
+  border: 0px;
 }
 
 .video_controller {
@@ -83,22 +78,6 @@
   @media #{$information_mobile} {
     top: 85px;
     left: 152px;
-  }
-}
-
-.video_controller-play {
-  width: 85px;
-  height: 85px;
-  padding: 0;
-
-  border: none;
-  border-radius: 100%;
-  background-image: url("../images/play_button.png");
-  @media #{$information_mobile} {
-    width: 37px;
-    height: 37px;
-
-    background-size: contain;
   }
 }
 
