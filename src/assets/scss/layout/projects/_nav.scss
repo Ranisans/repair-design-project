@@ -1,7 +1,7 @@
 @import "../../abstracts/mixins";
 @import "../../abstracts/fonts";
 
-.projects-nav {
+.projects_nav {
   width: 625px;
   margin-left: 20px;
 
@@ -38,7 +38,7 @@
   text-decoration: none;
 }
 
-.projects_container-active_link {
+.projects_container-link--active {
   padding-bottom: 7px;
 
   color: $Gold;
