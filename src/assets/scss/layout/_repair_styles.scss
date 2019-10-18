@@ -107,7 +107,7 @@
   }
 }
 
-.styles_menu-list {
+.styles_menu_list {
   margin-top: 44px;
   padding-left: 0;
 
@@ -116,7 +116,7 @@
   @include hidden_in_mobile();
 }
 
-.styles_menu-item {
+.styles_menu_list-item {
   margin-bottom: 24px;
 
   line-height: 24px;
@@ -126,7 +126,7 @@
   }
 }
 
-.styles_menu-link {
+.styles_menu_list-link {
   font-family: $ProximaNova;
   font-size: 1.25rem;
 
@@ -135,7 +135,7 @@
   text-decoration: none;
 }
 
-.styles_menu-item--active .styles_menu-link {
+.styles_menu_list-item--active .styles_menu_list-link {
   display: inline-block;
 
   padding-bottom: 2px;
