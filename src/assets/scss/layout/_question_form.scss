@@ -90,17 +90,14 @@
 }
 
 .form_container {
+  display: grid;
+
   width: 520px;
   padding-top: 16px;
 
-  @include on_page_center();
-}
-
-.grid_container {
-  display: grid;
-
   grid-template-columns: 290px 230px;
   grid-template-rows: 109px 93px 50px 50px 50px;
+  @include on_page_center();
 
   @media #{$information_mobile} {
     grid-template-columns: 340px;
