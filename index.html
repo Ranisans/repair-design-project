@@ -107,15 +107,15 @@
           <div class="flex_container">
             <div class="input_container input_container-name">
               <label for="name" class="input_container-label">Name</label>
-              <input type="text" id="name" name="name" placeholder="What is your name:" class="input_container-input">
+              <input type="text" id="name" name="name" placeholder="What is your name:" class="input_container-input" required >
             </div>
             <div class="input_container input_container-phone">
               <label for="telephone" class="input_container-label">Phone</label>
-              <input type="text" id="telephone" name="telephone" placeholder="Your phone number:" class="input_container-input">
+              <input type="text" id="telephone" name="telephone" placeholder="Your number (123-123-1234):" class="input_container-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
             </div>
             <button class="form-submit">submit</button>
             <div class="checkbox_container">
-              <input type="checkbox" class="checkbox_container-checkbox styled-checkbox" id="video_control-consent" value="consent" checked>
+              <input type="checkbox" class="checkbox_container-checkbox styled-checkbox" id="video_control-consent" value="consent" checked required >
               <label for="video_control-consent">I agree to the processing of personal data
               </label>
             </div>
@@ -220,18 +220,18 @@
           <p class="request_form-label">Leave a request for free departure of the measurer</p>
           <div class="input_container">
             <label for="request_name" class="input_container-label">Name</label>
-            <input type="text" id="request_name" name="name" placeholder="What is your name:" class="input_container-input">
+            <input type="text" id="request_name" name="name" placeholder="What is your name:" class="input_container-input" required >
           </div>
           <div class="input_container">
             <label for="request_telephone" class="input_container-label">Phone</label>
-            <input type="text" id="request_telephone" name="telephone" placeholder="Your phone number:" class="input_container-input">
+            <input type="text" id="request_telephone" name="telephone" placeholder="Your number (123-123-1234):" class="input_container-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
           </div>
           <div class="input_container">
             <label for="email" class="input_container-label">Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email:" class="input_container-input">
+            <input type="text" id="email" name="email" placeholder="Your email:" class="input_container-input" required >
           </div>
           <div class="checkbox_container">
-            <input type="checkbox" class="checkbox_container-checkbox styled-checkbox" id="request-consent" value="consent" checked>
+            <input type="checkbox" class="checkbox_container-checkbox styled-checkbox" id="request-consent" value="consent" checked required >
             <label for="request-consent">I agree to the processing of personal data
             </label>
           </div>
@@ -476,18 +476,18 @@
             <h2 class="form_container-label">have any questions?</h2>
             <div class="input_container form_container_name">
               <label for="question_name" class="input_container-label">Name</label>
-              <input type="text" id="question_name" name="name" placeholder="What is your name:" class="input_container-input question-input">
+              <input type="text" id="question_name" name="name" placeholder="What is your name:" class="input_container-input question-input" required >
             </div>
             <div class="input_container form_container_phone">
               <label for="question_telephone" class="input_container-label">Phone</label>
-              <input type="text" id="question_telephone" name="telephone" placeholder="Your phone number:" class="input_container-input question-input">
+              <input type="text" id="question_telephone" name="telephone" placeholder="Your number (123-123-1234):" class="input_container-input question-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
             </div>
             <div class="input_container form_container_question">
               <label for="question" class="input_container-label">Question</label>
-              <input type="text" id="question" name="telephone" placeholder="I want to know:" class="input_container-input question-input">
+              <input type="text" id="question" name="question" placeholder="I want to know:" class="input_container-input question-input" required >
             </div>
             <div class="checkbox_container form_container_checkbox">
-              <input type="checkbox" class="styled-checkbox" id="question-consent" value="consent" checked>
+              <input type="checkbox" class="styled-checkbox" id="question-consent" value="consent" checked required >
               <label for="question-consent">I agree to the processing of personal data
               </label>
             </div>
