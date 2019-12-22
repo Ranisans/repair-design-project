@@ -77,80 +77,80 @@ If the task is fully completed, and no defects are found by mentor, you are awar
 - Think of where `<h1>` should be used.
 
 2. Main (not necessary `<main>`)
-- [ ] Interactive buttons.
+- [x] Interactive buttons.
 - [ ] INSTAGRAM - should be a link.
-- [ ] Interactive "scroll down".
+- [x] Interactive "scroll down".
 - (Next block)
-- [ ] Interactive 3 items navbar.
-- [ ] Slider should have overflow hidden.
-- [ ] Interactive slider button.
-- [ ] Interactive arrows and pagination circles. 
+- [x] Interactive 3 items navbar.
+- [x] Slider should have overflow hidden.
+- [x] Interactive slider button.
+- [x] Interactive arrows and pagination circles. 
 - (Next block)
-- [ ] [any youtube video of repair topic](https://support.google.com/youtube/answer/171780?hl=en)
+- [x] [any youtube video of repair topic](https://support.google.com/youtube/answer/171780?hl=en)
 - (Next block)
-- [ ] Form with 2 inputs, required checkbox, submit button.
-- [ ] Validation on not empty fields with correct type.
+- [x] Form with 2 inputs, required checkbox, submit button.
+- [x] Validation on not empty fields with correct type.
 - (Next block)
-- [ ] 3 columns the same width.
+- [x] 3 columns the same width.
 - (Next block)
-- [ ] The circle item can be without gradient.
-- [ ] Big circle and circles over it should be created with css properties.
-- [ ] Form with 3 inputs, required checkbox, submit button.
-- [ ] Validation on not empty fields with correct type.
+- [x] The circle item can be without gradient.
+- [x] Big circle and circles over it should be created with css properties.
+- [x] Form with 3 inputs, required checkbox, submit button.
+- [x] Validation on not empty fields with correct type.
 - (Next block)
-- [ ] Correct placement of images.
+- [x] Correct placement of images.
 - (Next block)
-- [ ] 3 columns the same width but with different height of children.
+- [x] 3 columns the same width but with different height of children.
 - (Next block)
-- [ ] Correct number of columns.
-- [ ] Correct placement of heading in left top corner.
-- [ ] Interactive arrows and pagination circles.
+- [x] Correct number of columns.
+- [x] Correct placement of heading in left top corner.
+- [x] Interactive arrows and pagination circles.
 - (Next block)
-- [ ] Correct placement of photos and related images.
+- [x] Correct placement of photos and related images.
 - (Next block)
-- [ ] 3 columns the same width.
+- [x] 3 columns the same width.
 - (Next block)
-- [ ] Form with 3 inputs, required checkbox, submit button.
-- [ ] Validation on not empty fields with correct type.
+- [x] Form with 3 inputs, required checkbox, submit button.
+- [x] Validation on not empty fields with correct type.
 - (Next block)
 - [ ] Phone number must contain href of type tel.
 - [ ] Interactive buttons of social networks.
 - (Next block)
-- [ ] Map API block can be placed as just image.
+- [x] Map API block can be placed as just image.
 
 3. Footer (`<footer>` holds logo, navbar, tel, button)
-- [ ] Interactive navbar, button.
-- [ ] Phone number must contain href of type tel.
+- [x] Interactive navbar, button.
+- [x] Phone number must contain href of type tel.
 
 **Mobile**
 
 1. Header (`<header>` holds logo, h1, navbar, tel, button)
-- [ ] Phone number must contain href of type tel.
-- [ ] Think of where `<h1>` should be used.
+- [x] Phone number must contain href of type tel.
+- [x] Think of where `<h1>` should be used.
 
 2. Main (not necessary `<main>`)
-- [ ] Interactive buttons.
+- [x] Interactive buttons.
 - (Next block)
-- [ ] 2 columns under the image.
+- [x] 2 columns under the image.
 - (Next block)
-- [ ] [any youtube video of repair topic](https://support.google.com/youtube/answer/171780?hl=en)
+- [x] [any youtube video of repair topic](https://support.google.com/youtube/answer/171780?hl=en)
 - (Next block)
-- [ ] Form with 2 inputs, required checkbox, submit button.
-- [ ] Validation on not empty fields with correct type.
+- [x] Form with 2 inputs, required checkbox, submit button.
+- [x] Validation on not empty fields with correct type.
 - (Next block)
-- [ ] 3 vertical image blocks
+- [x] 3 vertical image blocks
 - (Next block)
-- [ ] Slider with one centered image.
-- [ ] Interactive slider buttons.
+- [x] Slider with one centered image.
+- [x] Interactive slider buttons.
 - (Next block)
-- [ ] 3 vertical image blocks
+- [x] 3 vertical image blocks
 - (Next block)
-- [ ] Correct placement of photos and related images.
+- [x] Correct placement of photos and related images.
 - (Next block)
-- [ ] Form with 3 inputs, required checkbox, submit button.
-- [ ] Validation on not empty fields with correct type.
+- [x] Form with 3 inputs, required checkbox, submit button.
+- [x] Validation on not empty fields with correct type.
 - (Next block)
-- [ ] Map API block can be placed as just image.
+- [x] Map API block can be placed as just image.
 - (Next block)
 - [ ] Phone number must contain href of type tel.
 - [ ] Interactive buttons of social networks.
