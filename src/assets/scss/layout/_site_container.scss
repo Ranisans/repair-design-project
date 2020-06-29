@@ -11,3 +11,14 @@ body {
 .site_container * {
   background: rgb(19, 19, 19);
 }
+
+button {
+  outline: none;
+
+  &:focus {outline:none;}
+  &::-moz-focus-inner {border:0;}
+}
+
+a {
+  outline: none;
+}

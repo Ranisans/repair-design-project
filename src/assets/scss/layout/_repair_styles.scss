@@ -1,8 +1,6 @@
 .repair_styles {
   width: 100%;
-  height: 1120px;
-
-  background: linear-gradient(0deg, #131313 89.1%, #fff 89.1%);
+  height: 950px;
 
   .header_scroll {
     display: none;
@@ -21,7 +19,7 @@
   }
 
   @media #{$information_mobile} {
-    height: 430px;
+    height: 350px;
 
     background: linear-gradient(
       to top,
@@ -60,12 +58,16 @@
   grid-template-rows: 310px 350px 370px;
 
   @media #{$information_tablets} {
+    padding-top: 0;
     grid-template-columns: 480px auto;
-    grid-template-rows: 310px 350px 370px;
+    grid-template-rows: 210px 350px 370px;
+    background-position-y: 68px;
   }
 
   @media #{$information_mobile} {
     display: block;
+
+    padding-top: 0;
 
     background-image: none;
   }
@@ -78,9 +80,17 @@
   grid-column: 1;
   grid-row: 1 / span 3;
 
+  @media #{$information_tablets} {
+    margin-top: 136px;
+  }
+
   @media #{$information_mobile} {
-    margin-top: 37px;
+    margin-top: 0;
     margin-left: 73px;
+
+    h2 {
+      margin-top: 0;
+    }
   }
 }
 
@@ -164,6 +174,10 @@
 
   grid-column: 2;
   grid-row: 1 / span 2;
+
+  @media #{$information_tablets} {
+    margin-top: 10px;
+  }
 
   @media #{$information_mobile} {
     height: 242px;
