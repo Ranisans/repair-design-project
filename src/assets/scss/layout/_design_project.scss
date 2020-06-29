@@ -218,10 +218,16 @@
     height: 414px;
     @media #{$information_mobile} {
       height: 241px;
+      .info_block_list-item:nth-child(n + 8) {
+        display: none;
+      }
     }
-
+    
     @media #{$information_tablets} {
       height: 252px;
+      .info_block_list-item:nth-child(n + 8) {
+          display: none;
+      }
     }
   }
 }
